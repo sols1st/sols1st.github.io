@@ -5,7 +5,7 @@ theme = 'paper'
 
 [params]
   # color style
-  color = 'linen'                           # linen, wheat, gray, light
+  color = 'light'                           # linen, wheat, gray, light
 
   # header social icons
   github = 'sols1st'                 # github.com/YOUR_GITHUB_ID
@@ -13,7 +13,8 @@ theme = 'paper'
   rss = true                                # show rss icon
 
   # home page profile
-  avatar = 'https://thumbnail0.baidupcs.com/thumbnail/e1f7b0f7fld59c899d0f923ce6832180?fid=4233709711-250528-278971243962296&time=1700244000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-tncGmdFAnRGBtLT8ya1ci67JIbU%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=529771963569007633&dp-callid=0&file_type=0&size=c710_u400&quality=100&vuk=-&ft=video'                 # gravatar email or image url
+  # avatar = 'https://thumbnail0.baidupcs.com/thumbnail/e1f7b0f7fld59c899d0f923ce6832180?fid=4233709711-250528-278971243962296&time=1700244000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-tncGmdFAnRGBtLT8ya1ci67JIbU%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=529771963569007633&dp-callid=0&file_type=0&size=c710_u400&quality=100&vuk=-&ft=video'                 # gravatar email or image url
+  avatar= 'sols1st@outlook.com'
   name = 'Solsist'
   bio = 'Just for fun'
 
@@ -22,6 +23,6 @@ theme = 'paper'
   # disableHLJS = true                        # disable highlight.js
   # disablePostNavigation = true              # disable post navigation
   monoDarkIcon = true                       # show monochrome dark mode icon
-  # gravatarCdn = 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
+  # gravatarCdn = 'https://cdn.v2ex.com/gravatar/'         # e.g. 'https://cdn.v2ex.com/gravatar/'
   # graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
   math = true                               # enable KaTeX math typesetting globally
