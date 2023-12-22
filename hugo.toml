@@ -1,7 +1,7 @@
 baseURL = 'https://sols1st.github.io'
 languageCode = 'zh-CN'
 title = "Solsist's Blog"
-theme = "Only"
+theme = "only"
 
 [[menus.main]]
 name = 'Home'
