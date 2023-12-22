@@ -28,6 +28,15 @@ weight = 30
     extended = false
     min = "0.116.0"
 
+[markup]
+  [markup.highlight]
+    guessSyntax = true
+    lineNoStart =1
+    lineNos = true
+    lineNumbersInTable = true
+    style = "abap"
+    tabWidth = 4
+
 [taxonomies]
   tag = "tags"
   category = "categories"
