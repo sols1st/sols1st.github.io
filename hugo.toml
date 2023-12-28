@@ -24,24 +24,25 @@ pageRef = '/tags'
 weight = 30
 
 [module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
 
 [markup]
-  [markup.highlight]
-    guessSyntax = true
-    lineNoStart =1
-    lineNos = true
-    lineNumbersInTable = true
-    style = "abap"
-    tabWidth = 4
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+style = "abap"
+tabWidth = 4
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+tag = "tags"
+category = "categories"
 
 [params]
-  bio = "知ってることだけ"
-  github = "sols1st"
-  email = "sols1st@outlook.com"
+bio = "知ってることだけ"
+github = "sols1st"
+email = "sols1st@outlook.com"
