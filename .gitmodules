@@ -1,6 +1,0 @@
-[submodule "themes/paper"]
-	path = themes/paper
-	url = https://github.com/nanxiaobei/hugo-paper
-[submodule "themes/only"]
-	path = themes/only
-	url = https://github.com/sols1st/only

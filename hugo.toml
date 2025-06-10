@@ -1,48 +1,44 @@
 baseURL = 'https://sols1st.github.io'
 languageCode = 'zh-CN'
 title = "Solsist's Blog"
-theme = "only"
-
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
-[[menus.main]]
-name = 'Categories'
-pageRef = '/categories'
-weight = 30
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+theme = "nostyleplease"
 
 [module]
-[module.hugoVersion]
-extended = false
-min = "0.116.0"
+  [module.hugoVersion]
+    extended = true
+    min      = "0.41.0"
 
 [markup]
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNoStart = 1
-lineNos = true
-lineNumbersInTable = true
-style = "abap"
-tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
 
-[taxonomies]
-tag = "tags"
-category = "categories"
+  [markup.highlight]
+    anchorLineNos      = false
+    codeFences         = true
+    guessSyntax        = true
+    hl_Lines           = ''
+    hl_inline          = false
+    lineAnchors        = ''
+    lineNoStart        = 1
+    lineNos            = false
+    lineNumbersInTable = true
+    noClasses          = true
+    noHl               = false
+    style              = "github"
+    tabWidth           = 4
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = false
 
 [params]
-bio = "知ってることだけ"
-github = "sols1st"
-email = "sols1st@outlook.com"
+  [params.theme_config]
+    appearance        = "light"
+    back_home_text    = "home"
+    date_format       = "2006-01-02"
+    isListGroupByDate = false
+    isShowFooter      = true

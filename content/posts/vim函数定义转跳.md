@@ -2,8 +2,6 @@
 title = 'Vim函数定义转跳'
 date = 2023-12-22T23:42:35+08:00
 draft = false
-tags = ['vim']
-categories = ['tools']
 +++
 
 ## 安装
@@ -20,7 +18,7 @@ categories = ['tools']
 
 ## 注意
 
-如果 ``ctrl+]`` 显示 ``E433: No tags file``
+如果 `ctrl+]` 显示 `E433: No tags file`
 
 在 ~/.vimrc 文件中添加：
 
