@@ -1,0 +1,19 @@
+[[entries]]
+title = "info"
+
+  [[entries.entries]]
+  title = "Music, Computer, Literature, Linguistics"
+
+  [[entries.entries]]
+  title = "Github"
+  url = "https://github.com/sols1st/"
+
+
+[[entries]]
+title = "posts"
+  
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
