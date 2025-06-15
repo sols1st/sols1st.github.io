@@ -1,6 +1,6 @@
 baseURL = 'https://sols1st.github.io'
 languageCode = 'zh-CN'
-title = "Solsist's Blog"
+title = "Solsist's Strobo"
 theme = "nostyleplease"
 
 [module]

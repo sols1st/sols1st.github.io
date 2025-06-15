@@ -80,6 +80,7 @@ chroot "$LFS" /usr/bin/env -i   \
     TESTSUITEFLAGS="-j$(nproc)" \
     /bin/bash --login
 ```
+Argument `MAKEFLAGS="-j$(nproc)"` means when running make with all cores.
 ## Installing Basic System Software
 When compiling ncureses, error associated with c++ libs in /usr/include occurred, I got solution [here](https://gitlab.archlinux.org/archlinux/packaging/packages/ncurses/-/issues/3) :
 ```sh
@@ -93,7 +94,63 @@ The path to the kernel image may vary depending on the platform being used. I co
 cp -iv arch/x86/boot/bzImage /boot/vmlinuz-6.14.6-lfs-r12.3-68-systemd
 ```
 
+## Creating the /etc/fstab File
+My `/etc/fstab` file:
+```
+# Begin /etc/fstab
+
+# / was on /dev/sda5
+UUID=deafecd3-6ad3-4227-8020-e1b0ea2fb6f6 /     ext4    errors=remount-ro 0     1
+# /boot was on /dev/sda2 during installation
+UUID=5b136400-72a8-46dd-afdd-c2bc387de255 /boot           ext2    defaults        0       2
+# /boot/efi was on /dev/sda1 during installation
+UUID=75C3-45EF  /boot/efi       vfat    umask=0077      0       1
+# swap was on /dev/sda3 during installation
+UUID=15b914a8-8073-43b6-a0d0-0206ddc5f43b none            swap    sw              0       0
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+
+# End /etc/fstab
+```
 ## Using GRUB to Set Up the Boot Process with UEFI
 Just following the [BLF manuel page](https://www.linuxfromscratch.org/blfs/view/systemd/postlfs/grub-setup.html) is correct. I wasted much time to figure out why kernel panic happens when booting the system.I edited `grub.cfg` again and again but kernel panic still occurred, then finally found it caused by copying wrong kernel image file after compiling.
 
-## Successfully Boot
+My `grub.cfg` file : 
+```
+# Begin /boot/grub/grub.cfg
+set default=0
+set timeout=5
+insmod part_gpt
+insmod ext2
+insmod fat
+insmod efi_gop
+insmod efi_uga
+
+set root=(hd0,gpt5)
+
+menuentry "Linux From Scratch 12.3-systemd" {
+    set root=(hd0,gpt2)
+    linux /vmlinuz-6.14.6-lfs-r12.3-68-systemd root=/dev/sda5 ro
+}
+
+menuentry "debian" {
+    set root=(hd0,gpt4)
+    linux (hd0,gpt2)/vmlinuz-6.1.0-37-amd64 root=/dev/sda4 ro
+    initrd (hd0,gpt2)/initrd.img-6.1.0-37-amd64
+}
+
+menuentry "Firmware Setup" {
+  fwsetup
+}
+
+# End /boot/grub/grub.cfg
+```
+## Network Setting
+After successfully booting the system, I discovered that there was no network connectivity. Running `ip link` revealed that the `eth0` network interface was missing, with only the `lo` interface present.
+
+To enable Hyper-V networking support in LFS:
+``` sh
+make menuconfig  # Enable: Device Drivers → Network → Microsoft Hyper-V Network
+make && make modules_install
+modprobe hv_netvsc
+```
+I tried to not reboot, but it doesn't work. I then replaced the old kernel image with the newly compiled one and rebooted the system, which finally works.

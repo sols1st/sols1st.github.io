@@ -1,19 +1,37 @@
 [[entries]]
-title = "info"
-
+title = "me"
   [[entries.entries]]
-  title = "Music, Computer, Literature, Linguistics"
-
+  title = "music, computer, literature and linguistics"
   [[entries.entries]]
-  title = "Github"
-  url = "https://github.com/sols1st/"
-
+  title = "currently a computer science graudate student"
 
 [[entries]]
 title = "posts"
   
   [entries.post_list]
   limit = 5
+  section = "posts"
   show_more = true
   show_more_text = "See archive..."
   show_more_url = "posts"
+
+[[entries]]
+title = "writing"
+
+  [entries.post_list]
+  limit = 5
+  section = "writing"
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "writing"
+
+[[entries]]
+title = "other"
+
+  [entries.post_list]
+  limit = 5
+  section = "other"
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "other"
+  
