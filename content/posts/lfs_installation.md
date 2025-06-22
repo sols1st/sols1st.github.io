@@ -2,6 +2,7 @@
 title = 'LFS-r12.3-systemd Installation'
 date = 2025-06-10T10:56:27+08:00
 draft = false
+tags = ["linux"]
 +++
 Only issues and custom content are logged.
 

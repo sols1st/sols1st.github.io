@@ -15,6 +15,15 @@ title = "posts"
   show_more_text = "See archive..."
   show_more_url = "posts"
 
+
+[[entries]]
+title = "reading"
+url = "log/reading_log"
+
+[[entries]]
+title = "anime"
+url = "log/anime_log"
+
 [[entries]]
 title = "writing"
 
@@ -34,4 +43,3 @@ title = "other"
   show_more = true
   show_more_text = "See archive..."
   show_more_url = "other"
-  
