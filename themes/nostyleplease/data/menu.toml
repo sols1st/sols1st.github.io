@@ -3,43 +3,28 @@ title = "me"
   [[entries.entries]]
   title = "music, computer, literature and linguistics"
   [[entries.entries]]
-  title = "currently a computer science graudate student"
+  title = "<a href='keys/key.gpg'>gpg-key</a> <a href='keys/key.ssh'>ssh-key</a>"
+  url = "sols1st@outlook.com"
+  [[entries.entries]]
+  title = "email"
+  url = "mailto:sols1st@outlook.com"
+
+[[entries]]
+title = "log"
+
+  [[entries.entries]]
+  title = "reading"
+  url = "reading"
+
+  [[entries.entries]]
+  title = "anime"
+  url = "anime"
 
 [[entries]]
 title = "posts"
   
   [entries.post_list]
-  limit = 5
   section = "posts"
   show_more = true
   show_more_text = "See archive..."
   show_more_url = "posts"
-
-
-[[entries]]
-title = "reading"
-url = "log/reading_log"
-
-[[entries]]
-title = "anime"
-url = "log/anime_log"
-
-[[entries]]
-title = "writing"
-
-  [entries.post_list]
-  limit = 5
-  section = "writing"
-  show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "writing"
-
-[[entries]]
-title = "other"
-
-  [entries.post_list]
-  limit = 5
-  section = "other"
-  show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "other"

@@ -6,7 +6,7 @@
 
 <!-- divide post list by year  -->
 {{ if  .Site.Params.theme_config.isListGroupByDate  }}
-    {{ range .Pages.GroupByDate "2006 Year" }}
+    {{ range .Pages.GroupByDate "2006" }}
     <p>{{ .Key }}</p>
     <ul>
         {{ range .Pages }}
