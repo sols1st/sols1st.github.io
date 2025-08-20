@@ -1,5 +1,5 @@
 +++
-title = 'Live Music Video Recommendation (updating)'
+title = 'Live Music Video Collection'
 date = 2025-06-19T11:21:00+08:00
 draft = false
 +++
@@ -42,18 +42,6 @@ draft = false
 - [瞬き](https://www.bilibili.com/video/BV15Y411y7tJ/)
 - [クリスマスソング](https://www.bilibili.com/video/BV18w411W7wv)
 
-## 米津玄師
-- [ゴーゴー幽霊船](https://www.bilibili.com/video/BV1fv411T78P/)
-- [Loser](https://www.bilibili.com/video/BV1Ne4y1e7rN/)
-- [爱丽丝](https://www.bilibili.com/video/BV1Zh41187m4/)
-- [灰色と青](http://www.bilibili.com/video/BV1rm4y1w71P)
-
-## 周杰伦
-- [暗号](https://www.bilibili.com/video/BV1uK41197Dk/)
-- [蒲公英的约定](https://www.bilibili.com/video/BV1z741167JW/)
-- [最长的电影](https://www.bilibili.com/video/BV1v54y1R7EW)
-- [搁浅](https://www.bilibili.com/video/BV1Zx4y1z7uz/)
-- [轨迹](https://www.bilibili.com/video/BV1dK4y1v7mg/)
 ## 方大同
 - [Love Song](https://www.bilibili.com/video/BV1wM4m1Y7Ly/)
 

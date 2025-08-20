@@ -1,5 +1,5 @@
 [[entries]]
-title = "me"
+title = "c'est moi"
   [[entries.entries]]
   title = "music, computer, literature and linguistics"
   [[entries.entries]]
@@ -21,7 +21,7 @@ title = "log"
   url = "anime"
 
 [[entries]]
-title = "posts"
+title = "post"
   
   [entries.post_list]
   section = "posts"
