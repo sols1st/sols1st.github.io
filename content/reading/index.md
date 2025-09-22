@@ -8,13 +8,9 @@ draft = false
 # Current
 简明法语教程 / 孙辉
 
-纯粹理性批判 / Immanuel Kant
-
 西方哲学史讲演录 / 赵林
 
 语言引论 / Victoria Fromkin, Robert Rodman, Nina Hyams
-
-堂吉诃德 / 塞万提斯·萨维德
 
 # 2025
 

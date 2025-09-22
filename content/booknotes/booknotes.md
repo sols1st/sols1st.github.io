@@ -1,7 +1,7 @@
 +++
 title = 'Booknotes'
 date = 2025-06-15T22:21:00+08:00
-draft = false
+draft = true
 +++
 
 # 宗教学是什么 / 张志刚
