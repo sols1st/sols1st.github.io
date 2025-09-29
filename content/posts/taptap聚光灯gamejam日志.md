@@ -1,7 +1,7 @@
 +++
 title = '聚光灯GameJam日志'
 date = 2025-09-21T21:40:54+08:00
-draft = false
+draft = true
 +++
 # 2025.9.21 初次会议
 - 成员自我介绍   
