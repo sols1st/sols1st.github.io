@@ -28,3 +28,9 @@ title = "post"
   show_more = true
   show_more_text = "See archive..."
   show_more_url = "posts"
+
+[[entries]]
+title = "toy"
+  [[entries.entries]]
+  title = "typing-cn"
+  url = "typing-cn"
