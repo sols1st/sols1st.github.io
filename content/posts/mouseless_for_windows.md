@@ -66,7 +66,7 @@ draft = false
 # 输入 p 之后进入项目文件夹
 function p {cd C://Users/Mephisto/Projects}
 # 切换 git 是否通过 clash 代理
-function proxy_on {git config --global http.proxy http://127.0.0.1:7890:git config --global https.proxy http://127.0.0.1:7890;}
+function proxy_on {git config --global http.proxy http://127.0.0.1:7890;git config --global https.proxy http://127.0.0.1:7890;}
 function proxy_off {git config --global --unset http.proxy;git config --global --unset https.proxy}
 ```
 

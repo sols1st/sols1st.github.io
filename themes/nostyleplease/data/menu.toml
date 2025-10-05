@@ -4,10 +4,8 @@ title = "c'est moi"
   title = "music, computer, literature and linguistics"
   [[entries.entries]]
   title = "<a href='keys/key.gpg'>gpg-key</a> <a href='keys/key.ssh'>ssh-key</a>"
-  url = "sols1st@outlook.com"
   [[entries.entries]]
-  title = "email"
-  url = "mailto:sols1st@outlook.com"
+  title = "<a href='mailto:sols1st@outlook'>email</a>"
 
 [[entries]]
 title = "log"
@@ -26,7 +24,7 @@ title = "post"
   [entries.post_list]
   section = "posts"
   show_more = true
-  show_more_text = "See archive..."
+  show_more_text = "show more"
   show_more_url = "posts"
 
 [[entries]]
