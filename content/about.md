@@ -26,6 +26,3 @@ This blog is a static [**Hugo**](https://gohugo.io/) site built on the minimalis
 
 ## Who is this blog for?
 DEFINITELY MYSELF.
-
-## "Why are your posts so few and so shallow?"
-"I'm a creep."
