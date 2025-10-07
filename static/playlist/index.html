@@ -16,6 +16,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             padding: 12px;
             margin: 0;
+            padding-bottom: 60px; /* 👈 防止底部内容被固定播放器遮挡 */
         }
 
         .container {
@@ -50,7 +51,6 @@
             width: 100%;
             border-collapse: collapse;
             table-layout: fixed;
-            /* 👈 关键：固定列宽布局 */
             min-width: 500px;
         }
 
@@ -64,7 +64,6 @@
             white-space: nowrap;
         }
 
-        /* 固定三列比例：50% / 25% / 25% */
         th:nth-child(1),
         td:nth-child(1) {
             width: 50%;
@@ -95,6 +94,7 @@
         @media (max-width: 600px) {
             body {
                 padding: 8px;
+                padding-bottom: 60px;
             }
 
             .back {
@@ -119,6 +119,22 @@
                 <a href="..">..</a>
             </div>
             <h1>Playlist</h1>
+
+            <!-- 固定在底部的音频播放器 -->
+            <div id="fixed-player" style="
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                max-width: 600px;
+                padding: 8px;
+                z-index: 1000;
+            ">
+                <audio id="main-audio" controls style="width: 100%; height: 40px;">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
 
             <div class="table-wrapper">
                 <table id="song-table">
@@ -150,6 +166,7 @@
         const tableBody = document.getElementById('table-body');
         const loadingMoreEl = document.getElementById('loading-more');
         const noMoreEl = document.getElementById('no-more');
+        const mainAudio = document.getElementById('main-audio'); // 👈 获取播放器
 
         loadNextPage();
 
@@ -162,9 +179,7 @@
 
         window.addEventListener('pageshow', (event) => {
             if (event.persisted) {
-                // 页面是从 bfcache 恢复的
                 document.querySelectorAll('.song-link').forEach(link => {
-                    // 从 data-original-name 恢复，或尝试从 innerHTML 恢复（更简单方式）
                     const original = link.getAttribute('data-original-name');
                     if (original) {
                         link.textContent = original;
@@ -228,22 +243,22 @@
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
-                <td>${artists}</td>
-                <td>${album}</td>
-            `;
+                    <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
+                    <td>${artists}</td>
+                    <td>${album}</td>
+                `;
                 tableBody.appendChild(row);
             });
-            bindSongClickEvents();
+            // 注意：不再需要 bindSongClickEvents，因为使用了事件委托
         }
 
+        // 使用事件委托处理点击（更高效）
         tableBody.addEventListener('click', async function (e) {
             if (e.target.classList.contains('song-link')) {
                 e.preventDefault();
                 const id = e.target.getAttribute('data-id');
                 if (!id) return;
 
-                // 保存原始文本（只保存一次）
                 if (!e.target.hasAttribute('data-original-name')) {
                     e.target.setAttribute('data-original-name', e.target.textContent);
                 }
@@ -255,10 +270,14 @@
                 try {
                     const url = await getMusicUrl(id, 'standard');
                     if (url) {
-                        // 跳转前先恢复文本（可选，但更稳妥）
+                        // 设置播放器 src 并尝试播放
+                        mainAudio.src = url;
+                        mainAudio.play().catch(err => {
+                            console.warn('Autoplay was blocked:', err);
+                            // 浏览器阻止自动播放是正常行为，用户可手动点击播放
+                        });
                         e.target.textContent = originalText;
                         e.target.style.opacity = '';
-                        window.location.href = url;
                     } else {
                         alert('Failed to load song URL');
                         e.target.textContent = originalText;
