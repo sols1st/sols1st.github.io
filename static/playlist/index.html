@@ -130,7 +130,6 @@
                         </tr>
                     </thead>
                     <tbody id="table-body">
-                        <!-- 歌曲将追加到这里 -->
                     </tbody>
                 </table>
             </div>
@@ -152,13 +151,26 @@
         const loadingMoreEl = document.getElementById('loading-more');
         const noMoreEl = document.getElementById('no-more');
 
-        // 初始加载
         loadNextPage();
 
         window.addEventListener('scroll', () => {
             if (!hasNextPage || isLoading) return;
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
                 loadNextPage();
+            }
+        });
+
+        window.addEventListener('pageshow', (event) => {
+            if (event.persisted) {
+                // 页面是从 bfcache 恢复的
+                document.querySelectorAll('.song-link').forEach(link => {
+                    // 从 data-original-name 恢复，或尝试从 innerHTML 恢复（更简单方式）
+                    const original = link.getAttribute('data-original-name');
+                    if (original) {
+                        link.textContent = original;
+                        link.style.opacity = '';
+                    }
+                });
             }
         });
 
@@ -214,16 +226,72 @@
                     : 'Unknown';
                 const album = song.al?.name || 'Unknown';
 
-                const songUrl = id ? `https://music.163.com/#/song?id=${id}` : 'javascript:void(0)';
-
                 const row = document.createElement('tr');
                 row.innerHTML = `
-          <td><a href="${songUrl}" target="_blank">${name}</a></td>
-          <td>${artists}</td>
-          <td>${album}</td>
-        `;
+                <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
+                <td>${artists}</td>
+                <td>${album}</td>
+            `;
                 tableBody.appendChild(row);
             });
+            bindSongClickEvents();
+        }
+
+        tableBody.addEventListener('click', async function (e) {
+            if (e.target.classList.contains('song-link')) {
+                e.preventDefault();
+                const id = e.target.getAttribute('data-id');
+                if (!id) return;
+
+                // 保存原始文本（只保存一次）
+                if (!e.target.hasAttribute('data-original-name')) {
+                    e.target.setAttribute('data-original-name', e.target.textContent);
+                }
+
+                const originalText = e.target.getAttribute('data-original-name');
+                e.target.textContent = 'Loading...';
+                e.target.style.opacity = '0.6';
+
+                try {
+                    const url = await getMusicUrl(id, 'standard');
+                    if (url) {
+                        // 跳转前先恢复文本（可选，但更稳妥）
+                        e.target.textContent = originalText;
+                        e.target.style.opacity = '';
+                        window.location.href = url;
+                    } else {
+                        alert('Failed to load song URL');
+                        e.target.textContent = originalText;
+                        e.target.style.opacity = '';
+                    }
+                } catch (err) {
+                    console.error('Error:', err);
+                    alert('Error occurred');
+                    e.target.textContent = originalText;
+                    e.target.style.opacity = '';
+                }
+            }
+        });
+
+        async function getMusicUrl(id, level = 'standard') {
+            const apiUrl = 'https://wyapi.toubiec.cn/api/music/url';
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: String(id), level })
+                });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                if (data.code === 200 && data.data?.[0]?.url) {
+                    return data.data[0].url;
+                } else {
+                    throw new Error(data.msg || 'No URL returned');
+                }
+            } catch (error) {
+                console.error('getMusicUrl error:', error);
+                return null;
+            }
         }
     </script>
 </body>

@@ -30,6 +30,7 @@ title = "log"
 title = "post"
   
   [entries.post_list]
+  limit = 8
   section = "posts"
   show_more = true
   show_more_text = "show more"
