@@ -11,12 +11,20 @@ title = "c'est moi"
 title = "log"
 
   [[entries.entries]]
-  title = "reading"
-  url = "reading"
+  title = "music"
+  url = "playlist"
+  
+  [[entries.entries]]
+  title = "live"
+  url = "live"
 
   [[entries.entries]]
   title = "anime"
   url = "anime"
+
+  [[entries.entries]]
+  title = "book"
+  url = "reading"
 
 [[entries]]
 title = "post"

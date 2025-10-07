@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solsist's Playlist</title>
+  <style>
+    /* ========== THEME SYSTEM (from your snippet) ========== */
+    html { height: 100%; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      min-height: 100%;
+      overflow-wrap: break-word;
+    }
+
+    .w {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Theme mixins compiled to CSS */
+    body[a="dark"] {
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    body[a="dark"] a {
+      color: #2f81f7;
+    }
+    body[a="dark"] a:visited {
+      color: #2f81f7;
+    }
+    body[a="dark"] table th,
+    body[a="dark"] table td {
+      border: 1px solid #30363d;
+    }
+    body[a="dark"] table tr {
+      background-color: #0d1117;
+      border-top: 1px solid #30363d;
+    }
+    body[a="dark"] table tr:nth-child(2n) {
+      background-color: #161b22;
+    }
+
+    body[a="light"] {
+      background-color: #ffffff;
+      color: #24292f;
+    }
+    body[a="light"] a {
+      color: #0969da;
+    }
+    body[a="light"] a:visited {
+      color: #0969da;
+    }
+    body[a="light"] table th,
+    body[a="light"] table td {
+      border: 1px solid #d0d7de;
+    }
+    body[a="light"] table tr {
+      background-color: #ffffff;
+      border-top: 1px solid #d0d7de;
+    }
+    body[a="light"] table tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body[a="auto"] {
+        background-color: #0d1117;
+        color: #e6edf3;
+      }
+      body[a="auto"] a {
+        color: #2f81f7;
+      }
+      body[a="auto"] a:visited {
+        color: #2f81f7;
+      }
+      body[a="auto"] table th,
+      body[a="auto"] table td {
+        border: 1px solid #30363d;
+      }
+      body[a="auto"] table tr {
+        background-color: #0d1117;
+        border-top: 1px solid #30363d;
+      }
+      body[a="auto"] table tr:nth-child(2n) {
+        background-color: #161b22;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      body[a="auto"] {
+        background-color: #ffffff;
+        color: #24292f;
+      }
+      body[a="auto"] a {
+        color: #0969da;
+      }
+      body[a="auto"] a:visited {
+        color: #0969da;
+      }
+      body[a="auto"] table th,
+      body[a="auto"] table td {
+        border: 1px solid #d0d7de;
+      }
+      body[a="auto"] table tr {
+        background-color: #ffffff;
+        border-top: 1px solid #d0d7de;
+      }
+      body[a="auto"] table tr:nth-child(2n) {
+        background-color: #f6f8fa;
+      }
+    }
+
+    /* ========== TABLE LAYOUT FIX ========== */
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      display: table; /* override 'block' to allow table-layout */
+      table-layout: fixed; /* 👈 critical for fixed column width */
+    }
+
+    th, td {
+      padding: 8px 12px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Fixed column proportions */
+    th:nth-child(1), td:nth-child(1) { width: 50%; }
+    th:nth-child(2), td:nth-child(2) { width: 25%; }
+    th:nth-child(3), td:nth-child(3) { width: 25%; }
+
+    th {
+      font-weight: 600;
+    }
+
+    .loading-more {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.95em;
+    }
+
+    /* Ensure link styles are inherited properly */
+    table a {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body a="auto">
+  <div class="w">
+    <!-- Back link styled as inline text -->
+    <p><a href="..">←</a></p>
+
+    <p>
+      <a href="https://music.163.com/playlist?id=327175538">
+        Sync data from NetEase Cloud Music
+      </a>
+    </p>
+
+    <div class="table-wrapper">
+      <table id="song-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Singer</th>
+            <th>Album</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- Songs loaded here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="loading-more" class="loading-more" style="display:none;">Loading more...</div>
+    <div id="no-more" class="loading-more" style="display:none;">No more songs</div>
+  </div>
+
+  <script>
+    const PLAYLIST_ID = '327175538';
+    const LIMIT = 30;
+    let currentPage = 0;
+    let hasNextPage = true;
+    let isLoading = false;
+
+    const API_BASE = 'https://apis.netstart.cn/music/playlist/track/all';
+    const tableBody = document.getElementById('table-body');
+    const loadingMoreEl = document.getElementById('loading-more');
+    const noMoreEl = document.getElementById('no-more');
+
+    loadNextPage();
+
+    window.addEventListener('scroll', () => {
+      if (!hasNextPage || isLoading) return;
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+        loadNextPage();
+      }
+    });
+
+    async function loadNextPage() {
+      if (isLoading || !hasNextPage) return;
+
+      isLoading = true;
+      loadingMoreEl.style.display = 'block';
+      noMoreEl.style.display = 'none';
+
+      currentPage += 1;
+      const offset = (currentPage - 1) * LIMIT;
+      const url = `${API_BASE}?id=${PLAYLIST_ID}&limit=${LIMIT}&offset=${offset}`;
+
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Network request failed');
+
+        const data = await response.json();
+        if (!data || !Array.isArray(data.songs)) {
+          throw new Error('Invalid response format');
+        }
+
+        const songs = data.songs;
+        hasNextPage = songs.length === LIMIT;
+
+        if (songs.length > 0) {
+          appendSongs(songs);
+        }
+
+        if (!hasNextPage) {
+          loadingMoreEl.style.display = 'none';
+          noMoreEl.style.display = 'block';
+        }
+      } catch (error) {
+        console.error(error);
+        loadingMoreEl.textContent = `Load failed: ${error.message}`;
+        loadingMoreEl.style.color = getComputedStyle(document.body).color;
+      } finally {
+        isLoading = false;
+        if (hasNextPage) {
+          loadingMoreEl.style.display = 'none';
+        }
+      }
+    }
+
+    function appendSongs(songs) {
+      songs.forEach(song => {
+        const name = song.name || 'Unknown';
+        const id = song.id || '';
+        const artists = song.ar && Array.isArray(song.ar)
+          ? song.ar.map(artist => artist.name).join(' / ')
+          : 'Unknown';
+        const album = song.al?.name || 'Unknown';
+
+        const songUrl = id ? `https://music.163.com/#/song?id=${id}` : 'javascript:void(0)';
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><a href="${songUrl}" target="_blank">${name}</a></td>
+          <td>${artists}</td>
+          <td>${album}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+  </script>
+</body>
+</html>
