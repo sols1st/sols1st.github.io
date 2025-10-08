@@ -1,7 +1,7 @@
 [[entries]]
 title = "c'est moi"
   [[entries.entries]]
-  title = "music, computer, literature and linguistics"
+  title = "music, computing, literature and linguistics"
   [[entries.entries]]
   title = "<a href='keys/key.gpg'>gpg-key</a> <a href='keys/key.ssh'>ssh-key</a>"
   [[entries.entries]]
@@ -9,22 +9,22 @@ title = "c'est moi"
 
 [[entries]]
 title = "log"
-
+  
   [[entries.entries]]
   title = "music"
   url = "playlist"
   
   [[entries.entries]]
-  title = "live"
-  url = "live"
-
-  [[entries.entries]]
   title = "anime"
   url = "anime"
-
+  
   [[entries.entries]]
   title = "book"
   url = "reading"
+  
+  [[entries.entries]]
+  title = "concert"
+  url = "live"
 
 [[entries]]
 title = "post"

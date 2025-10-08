@@ -1,11 +1,17 @@
 {{ if site.Params.theme_config.isShowFooter }}
-    {{ $footerContent := readFile "layouts/footer.md" }}
-    {{ if and $footerContent (ne $footerContent "") }}
-        {{ $footerContent | markdownify }}
-    {{ else }}
-        {{ warnf "layouts/footer.md file is not found or empty. Falling back to default footer." }}
-        <footer style="margin-top: 20px;" class="site-footer">
-            <p>&copy; {{ now.Format "2006" }} {{ site.Title }}</p>
-        </footer>
-    {{ end }}
+{{ $footerContent := readFile "layouts/footer.md" }}
+{{ if and $footerContent (ne $footerContent "") }}
+{{ $footerContent | markdownify }}
+{{ else }}
+{{ warnf "layouts/footer.md file is not found or empty. Falling back to default footer." }}
+<footer class="site-footer">
+    <p>&copy; 2023-{{ now.Format "2006" }} <a href="/">{{ site.Title }}</a>. Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>.</p>
+</footer>
+{{ end }} 
+<!-- <footer style="text-align: center; margin-top: 2rem; padding: 1rem; font-size: 0.9em; color: #666;">
+    <p>&copy; {{ now.Format "2006" }} {{ site.Title }}</p>
+    Posts licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC
+        BY-NC-SA 4.0</a>.
+    <br>
+</footer> -->
 {{ end }}
