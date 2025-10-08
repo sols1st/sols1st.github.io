@@ -16,7 +16,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             padding: 12px;
             margin: 0;
-            padding-bottom: 60px; /* 👈 防止底部内容被固定播放器遮挡 */
+            padding-bottom: 60px;
         }
 
         .container {
@@ -120,7 +120,6 @@
             </div>
             <h1>Playlist</h1>
 
-            <!-- 固定在底部的音频播放器 -->
             <div id="fixed-player" style="
                 position: fixed;
                 bottom: 0;
@@ -166,7 +165,86 @@
         const tableBody = document.getElementById('table-body');
         const loadingMoreEl = document.getElementById('loading-more');
         const noMoreEl = document.getElementById('no-more');
-        const mainAudio = document.getElementById('main-audio'); // 👈 获取播放器
+        const mainAudio = document.getElementById('main-audio');
+
+        let currentSongIndex = -1;
+        let currentlyPlayingLink = null; // 当前正在播放的 .song-link 元素
+
+        // 播放下一首的通用函数（支持失败重试）
+        async function playSongAtIndex(index) {
+            const row = tableBody.children[index];
+            if (!row) return false;
+
+            const link = row.querySelector('.song-link');
+            if (!link) return false;
+
+            const id = link.getAttribute('data-id');
+            if (!id) return false;
+
+            // 保存原始文本（用于恢复）
+            if (!link.hasAttribute('data-original-name')) {
+                link.setAttribute('data-original-name', link.textContent);
+            }
+
+            // 恢复上一首样式
+            if (currentlyPlayingLink) {
+                currentlyPlayingLink.style.color = '';
+                currentlyPlayingLink.style.opacity = '';
+            }
+
+            // 设置当前为“播放中”状态：灰色
+            link.textContent = 'Loading...';
+            link.style.color = '#888'; // 灰色
+            link.style.opacity = '0.8';
+
+            try {
+                const url = await getMusicUrl(id, 'standard');
+                if (url) {
+                    mainAudio.src = url;
+                    await mainAudio.play();
+                    // 播放成功：显示原名，保持灰色表示正在播放
+                    link.textContent = link.getAttribute('data-original-name');
+                    link.style.color = '#888';
+                    link.style.opacity = '1';
+                    currentlyPlayingLink = link;
+                    currentSongIndex = index;
+                    return true;
+                } else {
+                    // URL 获取失败
+                    throw new Error('No valid URL');
+                }
+            } catch (err) {
+                alert('Failed to play this song');
+                console.warn('Failed to play song at index', index, err);
+                // 恢复文本
+                link.textContent = link.getAttribute('data-original-name');
+                link.style.color = '';
+                link.style.opacity = '';
+                currentlyPlayingLink = null;
+                return false;
+            }
+        }
+
+        async function tryPlayNextFrom(currentIndex) {
+            const total = tableBody.children.length;
+            let attempts = 0;
+            let nextIndex = currentIndex + 1;
+
+            while (attempts < total) {
+                if (nextIndex >= total) {
+                    console.log('Reached end of playlist.');
+                    return;
+                }
+
+                const success = await playSongAtIndex(nextIndex);
+                if (success) {
+                    return;
+                }
+                nextIndex++;
+                attempts++;
+            }
+            console.log('No playable songs found after index', currentIndex);
+        }
 
         loadNextPage();
 
@@ -184,6 +262,7 @@
                     if (original) {
                         link.textContent = original;
                         link.style.opacity = '';
+                        link.style.color = '';
                     }
                 });
             }
@@ -243,56 +322,31 @@
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
-                    <td>${artists}</td>
-                    <td>${album}</td>
-                `;
+                <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
+                <td>${artists}</td>
+                <td>${album}</td>
+            `;
                 tableBody.appendChild(row);
             });
-            // 注意：不再需要 bindSongClickEvents，因为使用了事件委托
         }
 
-        // 使用事件委托处理点击（更高效）
         tableBody.addEventListener('click', async function (e) {
             if (e.target.classList.contains('song-link')) {
                 e.preventDefault();
-                const id = e.target.getAttribute('data-id');
-                if (!id) return;
+                const row = e.target.closest('tr');
+                const index = Array.from(tableBody.children).indexOf(row);
+                if (index === -1) return;
 
-                if (!e.target.hasAttribute('data-original-name')) {
-                    e.target.setAttribute('data-original-name', e.target.textContent);
-                }
-
-                const originalText = e.target.getAttribute('data-original-name');
-                e.target.textContent = 'Loading...';
-                e.target.style.opacity = '0.6';
-
-                try {
-                    const url = await getMusicUrl(id, 'standard');
-                    if (url) {
-                        // 设置播放器 src 并尝试播放
-                        mainAudio.src = url;
-                        mainAudio.play().catch(err => {
-                            console.warn('Autoplay was blocked:', err);
-                            // 浏览器阻止自动播放是正常行为，用户可手动点击播放
-                        });
-                        e.target.textContent = originalText;
-                        e.target.style.opacity = '';
-                    } else {
-                        alert('Failed to load song URL');
-                        e.target.textContent = originalText;
-                        e.target.style.opacity = '';
-                    }
-                } catch (err) {
-                    console.error('Error:', err);
-                    alert('Error occurred');
-                    e.target.textContent = originalText;
-                    e.target.style.opacity = '';
-                }
+                await playSongAtIndex(index);
             }
         });
 
-        async function getMusicUrl(id, level = 'standard') {
+        // 音频播放结束：自动播放下一首
+        mainAudio.addEventListener('ended', () => {
+            tryPlayNextFrom(currentSongIndex);
+        });
+
+        async function getMusicUrlByWyapi(id, level = 'standard') {
             const apiUrl = 'https://wyapi.toubiec.cn/api/music/url';
             try {
                 const response = await fetch(apiUrl, {
@@ -300,7 +354,11 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: String(id), level })
                 });
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                    alert("Some errors occurred in the api server.")
+                    return 
+                }
                 const data = await response.json();
                 if (data.code === 200 && data.data?.[0]?.url) {
                     return data.data[0].url;
@@ -311,6 +369,23 @@
                 console.error('getMusicUrl error:', error);
                 return null;
             }
+        }
+
+        async function getMusicUrlByNxvav(id) {
+            const apiUrl = 'https://api.nxvav.cn/api/music/?type=url&id=';
+            try {
+                const response = await fetch(apiUrl + id);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.url;
+                return data
+            } catch (error) {
+                console.error('getMusicUrl error:', error);
+                return null;
+            }
+        }
+
+        async function getMusicUrl(id) {
+            return getMusicUrlByWyapi(id)
         }
     </script>
 </body>
