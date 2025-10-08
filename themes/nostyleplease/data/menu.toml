@@ -8,6 +8,16 @@ title = "c'est moi"
   title = "<a href='mailto:sols1st@outlook'>email</a>"
 
 [[entries]]
+title = "post"
+  
+  [entries.post_list]
+  limit = 8
+  section = "posts"
+  show_more = true
+  show_more_text = "show more"
+  show_more_url = "posts"
+
+[[entries]]
 title = "log"
   
   [[entries.entries]]
@@ -25,16 +35,6 @@ title = "log"
   [[entries.entries]]
   title = "concert"
   url = "live"
-
-[[entries]]
-title = "post"
-  
-  [entries.post_list]
-  limit = 8
-  section = "posts"
-  show_more = true
-  show_more_text = "show more"
-  show_more_url = "posts"
 
 [[entries]]
 title = "toy"
