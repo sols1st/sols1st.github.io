@@ -11,7 +11,7 @@ title = "c'est moi"
 title = "post"
   
   [entries.post_list]
-  limit = 8
+  limit = 10
   section = "posts"
   show_more = true
   show_more_text = "show more"
@@ -29,7 +29,7 @@ title = "log"
   url = "anime"
   
   [[entries.entries]]
-  title = "book"
+  title = "reading"
   url = "reading"
   
   [[entries.entries]]
