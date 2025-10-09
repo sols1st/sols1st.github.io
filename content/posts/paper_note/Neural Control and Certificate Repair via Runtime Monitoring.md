@@ -1,7 +1,7 @@
 +++
 title = 'Neural Control and Certificate Repair via Runtime Monitoring'
 date = 2025-10-03T00:14:24+08:00
-draft = false
+draft = true
 +++
 ## PDF
 [Neural Control and Certificate Repair via Runtime Monitoring](../Neural%20Control%20and%20Certificate%20Repair%20via%20Runtime%20Monitoring.pdf)
