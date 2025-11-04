@@ -3,6 +3,9 @@ title = 'Live Music Video Collection'
 date = 2025-06-19T11:21:00+08:00
 draft = false
 +++
+# Full
+- [SCIENCE FICTION TOUR 2024](https://www.bilibili.com/video/BV1CCBHYqEfG/) / 宇多田ヒカル / 2025-10-16
+# Single
 - [黑暗中漫舞 [The Easy Ride]](https://www.bilibili.com/video/BV1QU4y1o7Wp)
 - [无人之境 [DUO]](https://www.bilibili.com/video/BV1x54y1G7Z6/)
 - [陀飞轮 [DUO]](https://www.bilibili.com/video/BV1Gy4y1q7ZS/)
