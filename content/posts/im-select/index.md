@@ -57,3 +57,28 @@ Windows 平台下只需要配置 `Settings for Windows platform` 部分
 
 例子：
 ![](obsidian.png)
+## Vim
+在 `.vimrc` 中增加如下内容:
+```vim
+let g:im_select_path = 'C:\tools\im-select.exe'  " ← 改成实际路径
+
+" 默认英文输入法（1033 = 英语（美国））
+let g:default_im = '1033'
+
+" 切换到英文输入法
+function! IM_ToEnglish()
+    if filereadable(g:im_select_path)
+        call system(g:im_select_path . ' ' . g:default_im)
+            endif
+            endfunction
+
+            " 离开插入模式 → 强制切英文
+            autocmd InsertLeave * call IM_ToEnglish()
+            " 进入插入模式时恢复上次输入法
+            autocmd InsertEnter * call system(g:im_select_path . ' restore')
+
+            " Vim 启动和退出时也切回英文
+            autocmd VimEnter * call IM_ToEnglish()
+            autocmd VimLeave * call IM_ToEnglish()
+
+```                
