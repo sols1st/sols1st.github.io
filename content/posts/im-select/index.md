@@ -69,16 +69,16 @@ let g:default_im = '1033'
 function! IM_ToEnglish()
     if filereadable(g:im_select_path)
         call system(g:im_select_path . ' ' . g:default_im)
-            endif
-            endfunction
+    endif
+endfunction
 
-            " 离开插入模式 → 强制切英文
-            autocmd InsertLeave * call IM_ToEnglish()
-            " 进入插入模式时恢复上次输入法
-            autocmd InsertEnter * call system(g:im_select_path . ' restore')
+" 离开插入模式 → 强制切英文
+autocmd InsertLeave * call IM_ToEnglish()
+" 进入插入模式时恢复上次输入法
+autocmd InsertEnter * call system(g:im_select_path . ' restore')
 
-            " Vim 启动和退出时也切回英文
-            autocmd VimEnter * call IM_ToEnglish()
-            autocmd VimLeave * call IM_ToEnglish()
+" Vim 启动和退出时也切回英文
+autocmd VimEnter * call IM_ToEnglish()
+autocmd VimLeave * call IM_ToEnglish()
 
 ```                
