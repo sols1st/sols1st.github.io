@@ -24,10 +24,10 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 call plug#begin('$HOME/vimfiles/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tmhedberg/SimpylFold'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}     " 智能补全 + LSP
+Plug 'tmhedberg/SimpylFold'                         " 代码折叠
+Plug 'tpope/vim-surround'                           " 改引号
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " 模糊搜索
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
@@ -36,8 +36,10 @@ Plug 'preservim/nerdcommenter'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 'markdown' }
 Plug 'tpope/vim-fugitive'
+" Plug 'justinmk/vim-sneak'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-startify'
+" Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
@@ -81,8 +83,7 @@ set hidden
 set showtabline=2
 set ignorecase
 set smartcase
-set formatoptions-=o
-set formatoptions-=r
+set shell=powershell
 
 " === 回到上次打开状态 ===
 autocmd BufReadPost *
@@ -93,9 +94,17 @@ autocmd BufReadPost *
 let &t_SI = "\e[6 q"   " Insert 模式：细线
 let &t_EI = "\e[2 q"   " Normal 模式：方块
 let &t_SR = "\e[4 q"   " Replace 模式：下划线
-autocmd VimEnter * silent !echo -ne "\e[2 q"
 
 colorscheme elflord
+
+" === 防止命令大小写误触 ===
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev WQ wq
+cnoreabbrev Wq wq
+cnoreabbrev Wqa wqa
+cnoreabbrev Qa qa
+cnoreabbrev QA qa
 
 " ==================== 基础快捷键 ====================
 
@@ -109,21 +118,25 @@ inoremap <C-c> <Esc>"+yya
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 nnoremap <F5> :w<CR>:!python "%"<CR>
+nnoremap <A-r> :w<CR>:!python "%"<CR>
 nnoremap <leader>a <C-a>
 nnoremap <leader>x <C-x>
+nnoremap <leader>r :so $MYVIMRC<CR>
+
 
 " esc取消搜索高亮显示
 nnoremap <silent> <Esc> :noh<CR>
 
-" === 分屏快捷键 ===
+" === 分屏切换快捷键 ===
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <leader>sj :split<CR>
-nnoremap <leader>sl :vsplit<CR>
+nnoremap <leader>sj :split<CR><C-w>j
+nnoremap <leader>sl :vsplit<CR><C-w>l
 nnoremap <leader>sw :close<CR>
+nnoremap <leader>sq :close<CR>
 
 " === tab 快捷键 ===
 nnoremap <leader>tn :tabnew<CR>
@@ -133,10 +146,12 @@ nnoremap <leader>tl :tabnext<CR>
 nnoremap <leader>tm :tabmove<CR>
 nnoremap <tab> :tabnext<CR>
 nnoremap <s-tab> :tabprev<CR>
-"
 " === buffer 快捷键 ===
-nnoremap <leader>h :bnext<CR>
-nnoremap <leader>l :bprev<CR>
+nnoremap <leader>ba :Buffers<CR>
+nnoremap <leader>bh :bprev<CR>
+nnoremap <leader>bl :bnext<CR>
+nnoremap <leader>bq :bdelete<CR>
+nnoremap <leader>bw :bdelete<CR>
 
 " =================== coc.nvim 配置 ===================
 
@@ -176,6 +191,22 @@ let g:coc_global_extensions = [
 let g:EasyMotion_smartcase = 1    " 忽略大小写
 let g:EasyMotion_use_smartsign_us = 1  " 支持 !@#$ 等符号
 
+nmap <Leader>j <Plug>(easymotion-j)
+nmap <Leader>k <Plug>(easymotion-k)
+nmap J <Plug>(easymotion-j)
+nmap K <Plug>(easymotion-k)
+nmap W <Plug>(easymotion-w)
+nmap <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>f <Plug>(easymotion-bd-w)
+
+xmap <Leader>j <Plug>(easymotion-j)
+xmap <Leader>k <Plug>(easymotion-k)
+xmap J <Plug>(easymotion-j)
+xmap K <Plug>(easymotion-k)
+xmap W <Plug>(easymotion-w)
+xmap <Leader>w <Plug>(easymotion-bd-w)
+xmap <Leader>f <Plug>(easymotion-bd-w)
+
 " =================== gitgutter 配置 ===================
 
 let g:gitgutter_map_keys = 0    "禁止gitgutter自动生成leader映射
@@ -196,25 +227,32 @@ nnoremap <C-p> :Files<CR>
 let g:NERDCreateDefaultMappings = 0   " 关闭默认映射
 let g:NERDCompactSexyComs = 1         " 紧凑美观
 let g:NERDDefaultAlign = 'left'       " 左对齐
-let g:NERDCommentEmptyLines = 0       " 空行也注释
+let g:NERDCommentEmptyLines = 1       " 空行也注释
 let g:NERDTrimTrailingWhitespace = 1  " 自动去尾空格
+let g:NERDSpaceDelims = 1
 
 " === 注释：Ctrl+/ 和 空格 c ===
-nnoremap <silent> <C-/> :<C-u>call NERDComment(0,"toggle")<CR>
-vnoremap <silent> <C-/> :<C-u>call NERDComment(0,"toggle")<CR>gv
-inoremap <silent> <C-/> <Esc>:<C-u>call NERDComment(0,"toggle")<CR>a
+nnoremap <silent> <C-/> <plug>NERDCommenterToggle
+inoremap <silent> <C-/> <Esc><plug>NERDCommenterToggle a
+xnoremap <silent> <C-/> <plug>NERDCommenterToggle
 
 " ====================== NERDTree =====================
 
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <leader>n :NERDTreeFind<CR>
 
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI = 1         " 隐藏帮助行（清爽 + 加速渲染）
 let NERDTreeWinSize = 32          " 固定宽度（避免 resize 卡顿）
 let NERDTreeHighlightCursorline = 1
+let g:NERDTreeAutoResize = 1
 let g:NERDTreeChDirMode = 2          " 进入目录自动 :cd
 let g:NERDTreeShowBookmarks = 1       " 始终显示书签区
+autocmd BufWinEnter * if &buftype != 'quickfix' && getcmdwintype() == '' | silent NERDTreeMirror | endif
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
+autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+            \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 nnoremap <silent> <leader>p :NERDTreeFromBookmark<space>
 
@@ -222,7 +260,7 @@ nnoremap <silent> <leader>p :NERDTreeFromBookmark<space>
 
 if has('win32') || has('win64') || has('win16')
     " im-select 路径
-    let g:im_select_path = 'C:\software\im-select.exe'
+    let g:im_select_path = 'C:\software\im-select.exe'  
     " 默认英文输入法（1033 = 英语（美国））
     let g:default_im = '1033'
 
@@ -251,22 +289,72 @@ let g:startify_session_delete_buffers = 1
 let g:startify_change_to_vcs_root = 1
 let g:startify_padding_left = 4
 
-" 自定义显示列表（顺序可调）
-let g:startify_lists = [
-            \ { 'type': 'sessions',  'header': ['   Sessions'] },
-            \ { 'type': 'files',     'header': ['   Recent Files'] },
-            \ { 'type': 'dir',       'header': ['   Current Dir '. getcwd()] },
-            \ { 'type': 'bookmarks', 'header': ['   Bookmarks'] },
-            \ ]
-
-let g:startify_bookmarks = []
-
 let g:startify_custom_header = [
             \ '   Welcome back! ' . strftime("%Y-%m-%d %H:%M"),
             \ ]
 
-" 启动时自动进入 Startify和NERDTree（仅当无参数启动）
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | Startify | endif
+
+" 自动增加NERDTree的Bookmarks
+if has('win32') || has('win64')
+    " Windows: NERDTree 书签文件在 %USERPROFILE%\.NERDTreeBookmarks
+    let s:bookmark_file = expand('$USERPROFILE\.NERDTreeBookmarks')
+
+    if filereadable(s:bookmark_file)
+        " 读取所有行
+        let lines = readfile(s:bookmark_file)
+        " 过滤掉注释行和空行，提取路径（每行格式：BOOKMARKNAME PATH）
+        let g:startify_bookmarks = []
+        for line in lines
+            if line !~ '^#' && line !~ '^\s*$' && line =~ '\s'
+                let parts = split(line)
+                if len(parts) >= 2
+                    " 拼接从第2个字段开始的所有部分（路径可能含空格）
+                    let path = join(parts[1:], ' ')
+                    call add(g:startify_bookmarks, path)
+                endif
+            endif
+        endfor
+    else
+        " Unix-like 系统保持原逻辑
+        let g:startify_bookmarks = systemlist("cut -sd' ' -f 2- ~/.NERDTreeBookmarks")
+    endif
+endif
+
+" 获取 ~/project 内容
+let s:max_files_amount = 100
+let s:project_path = '~/project'
+
+function! s:list_files_project_directory(...) abort
+    let l:file_amount = get(a:, 1, s:max_files_amount)
+
+    if l:file_amount > s:max_files_amount
+        let l:file_amount = s:max_files_amount
+    elseif l:file_amount <= 0
+        let l:file_amount = 1
+    endif
+
+    let l:all_files = split(globpath(s:project_path, '*'), '\n')
+    return map(l:all_files[:l:file_amount-1], '{"line": v:val, "cmd": "edit " . v:val }')
+endfunction
+
+" 自定义命令列表
+let g:startify_commands = [
+            \ { 'c': ['Vim Config', ':e $MYVIMRC'] },
+            \ ]
+
+" 自定义显示列表
+let g:startify_lists = [
+            \ { 'type': function('s:list_files_project_directory', [20]),'header': ['   ~/project'],},
+            \ { 'type': 'bookmarks', 'header': ['   Bookmarks'] },
+            \ { 'type': 'files',     'header': ['   Recent Files'] },
+            \ { 'type': 'dir',       'header': ['   Current Dir '. getcwd()] },
+            \ { 'type': 'commands',  'header': ['   Commands']},
+            \ ]
+
+" 启动时自动进入 Startify（仅当无参数启动）
+autocmd VimEnter *
+            \   if !argc()
+            \ |   Startify
 ```
 
 ## 快捷键
