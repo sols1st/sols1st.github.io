@@ -4,16 +4,29 @@ date = 2025-11-16T13:41:34+08:00
 draft = false
 +++
 
-_for windows_
-
 ## 预备工作
 
-安装vim-plug
+### 安装vim-plug
+#### Unix
 
-```ps
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+You can automate the process by putting the command in your Vim configuration
+file as suggested [here][auto].
+
+[auto]: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
+
+#### Windows (PowerShell)
+
+```powershell
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni $HOME/vimfiles/autoload/plug.vim -Force
 ```
+
+### 创建 `~/vimfiles` 文件夹存放swap, undo, backup
 
 ## 配置文件
 
@@ -255,30 +268,6 @@ autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' 
             \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
 
 nnoremap <silent> <leader>p :NERDTreeFromBookmark<space>
-
-" =================== 输入法切换 ===================
-
-if has('win32') || has('win64') || has('win16')
-    " im-select 路径
-    let g:im_select_path = 'C:\software\im-select.exe'  
-    " 默认英文输入法（1033 = 英语（美国））
-    let g:default_im = '1033'
-
-    " 切换到英文输入法
-    function! IM_ToEnglish()
-        if filereadable(g:im_select_path)
-            call system(g:im_select_path . ' ' . g:default_im)
-        endif
-    endfunction
-
-    " 离开插入模式 → 强制切英文
-    autocmd InsertLeave * call IM_ToEnglish()
-    " autocmd InsertEnter * call system(g:im_select_path . ' restore')
-
-    " Vim 启动时也切回英文 离开切回中文
-    autocmd VimEnter * call IM_ToEnglish()
-    autocmd VimLeave * call system(g:im_select_path . ' restore')
-endif
 
 " =================== vim-startify 配置 ===================
 " 自定义启动页面
