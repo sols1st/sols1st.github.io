@@ -1,5 +1,5 @@
 +++
-title = 'Windows 下各软件的 Vim 模式中英文输入法自动切换方案'
+title = 'Automatic IME Switching for Vim Modes in Windows'
 date = 2025-11-15T12:23:58+08:00
 draft = false
 +++
