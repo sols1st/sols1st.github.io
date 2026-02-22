@@ -1,5 +1,5 @@
 +++
-title = 'GPG Command Notes'
+title = 'GPG Command Cheatsheet'
 date = 2025-08-19T16:47:15+08:00
 draft = false
 +++
