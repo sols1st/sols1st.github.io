@@ -17,6 +17,7 @@ Devices currently in use.
 8. Vivo TWS 4
 9. OPPO Enco Air 3
 10. Xiaomi Smart Band 10 NFC
+11. Nektar SE25
 
 ## Owned
 Devices that I still keep but no longer actively use.
