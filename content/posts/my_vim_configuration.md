@@ -3,6 +3,7 @@ title = 'My Vim Configuration'
 date = 2025-11-16T13:41:34+08:00
 draft = false
 +++
+[minimal](#minimal-non-plugin)
 
 ## 预备工作
 
@@ -449,3 +450,114 @@ autocmd VimEnter *
 - vim-easymotion：快速跳转
 - vim-startify：定制启动页
 
+
+## minimal (non-plugin)
+```vim
+syntax on                                 " 启用语法高亮
+filetype plugin indent on                 " 启用文件类型检测、插件、自动缩进
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set number                                " 显示绝对行号
+set autoread                              " 文件被外部修改时自动重新读取
+au FocusGained,BufEnter * silent! checktime " 窗口获得焦点或进入缓冲区时自动检查文件变化
+set relativenumber                        " 显示相对行号（当前行显示 0）
+set cursorline                            " 高亮当前行
+set encoding=utf-8                        " 设置文件编码为 UTF-8（支持中文）
+set termguicolors                         " 启用真彩色（256 色以上终端）
+set tabstop=4                             " Tab 键显示为 4 个空格宽度
+set shiftwidth=4                          " 自动缩进宽度为 4 个空格
+set expandtab                             " 将 Tab 键输入转换为空格
+set ai                                    " 启用自动缩进（auto indent）
+set si                                    " 启用智能缩进（smart indent）
+set wrap                                  " 自动折行（长行换行显示）
+set clipboard=unnamed                     " 使用系统剪贴板（Ctrl+C/V 可用）
+set noerrorbells                          " 关闭错误提示音
+set novisualbell                          " 关闭视觉错误提示（如屏幕闪烁）
+set t_vb=                                 " 禁用终端视觉响铃
+set backspace=eol,start,indent            " 允许退格键删除换行、行首、缩进
+set so=7                                  " 光标上下保留 7 行缓冲（scroll offset）
+set wildmenu                              " 命令模式下显示补全菜单
+set hlsearch                              " 高亮搜索结果
+set incsearch                             " 启用增量搜索（边输入边匹配）
+set nobackup                              " 不创建备份文件（~ 文件）
+set nowb                                  " 不创建写入备份
+set laststatus=2                          " 始终显示状态栏
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%)
+set showmatch
+set directory=~/vimfiles/swap//
+set undodir=~/vimfiles/undo//
+set backupdir=~/vimfiles/backup//
+set undofile
+set hidden
+set showtabline=2
+set ignorecase
+set smartcase
+set shell=powershell
+
+" === 回到上次打开状态 ===
+autocmd BufReadPost *
+            \ if line("'\"") > 0 && line("'\"") <= line("$") && &ft !~# 'commit\|rebase' |
+            \   exe "normal! g'\"" |
+            \ endif
+
+let &t_SI = "\e[6 q"   " Insert 模式：细线
+let &t_EI = "\e[2 q"   " Normal 模式：方块
+let &t_SR = "\e[4 q"   " Replace 模式：下划线
+
+colorscheme elflord
+
+" === 防止命令大小写误触 ===
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev WQ wq
+cnoreabbrev Wq wq
+cnoreabbrev Wqa wqa
+cnoreabbrev Qa qa
+cnoreabbrev QA qa
+
+" ==================== 基础快捷键 ====================
+
+let mapleader = " "
+map H 0
+map L g_
+map <C-a> ggvG$
+vnoremap <C-c> "+y
+nnoremap <C-c> "+yy
+inoremap <C-c> <Esc>"+yya
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+nnoremap <F5> :w<CR>:!python "%"<CR>
+nnoremap <A-r> :w<CR>:!python "%"<CR>
+nnoremap <leader>a <C-a>
+nnoremap <leader>x <C-x>
+nnoremap <leader>r :so $MYVIMRC<CR>
+
+
+" esc取消搜索高亮显示
+nnoremap <silent> <Esc> :noh<CR>
+
+" === 分屏切换快捷键 ===
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <leader>sj :split<CR><C-w>j
+nnoremap <leader>sl :vsplit<CR><C-w>l
+nnoremap <leader>sw :close<CR>
+nnoremap <leader>sq :close<CR>
+
+" === tab 快捷键 ===
+nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>th :tabprev<CR>
+nnoremap <leader>tl :tabnext<CR>
+nnoremap <leader>tm :tabmove<CR>
+nnoremap <tab> :tabnext<CR>
+nnoremap <s-tab> :tabprev<CR>
+" === buffer 快捷键 ===
+nnoremap <leader>ba :Buffers<CR>
+nnoremap <leader>bh :bprev<CR>
+nnoremap <leader>bl :bnext<CR>
+nnoremap <leader>bq :bdelete<CR>
+nnoremap <leader>bw :bdelete<CR>
+```
