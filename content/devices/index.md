@@ -12,12 +12,13 @@ Devices currently in use.
 3. Intel NUC 7 i7BNHXGL
 4. Realme Neo 7 (12GB / 256GB)
 5. iPad (9th generation, 64GB)
-6. Kindle Paperwhite 2
-7. Edifier W820NB
-8. Vivo TWS 4
-9. OPPO Enco Air 3
-10. Xiaomi Smart Band 10 NFC
-11. Nektar SE25
+6. iPad mini (5th generation, 64GB)
+7. Kindle Paperwhite 2
+8. Edifier W820NB
+9. Vivo TWS 4
+10. OPPO Enco Air 3
+11. Xiaomi Smart Band 10 NFC
+12. Nektar SE25
 
 ## Owned
 Devices that I still keep but no longer actively use.
