@@ -106,19 +106,19 @@ draft = false
 
 ## 图片
 ### iCloud 账户登录成功
-![](./icloud.PNG)
+![](./icloud.png)
 ### 安装的应用
-![](./app1.PNG)
-![](./app2.PNG)
-![](./app3.PNG)
+![](./app1.png)
+![](./app2.png)
+![](./app3.png)
 ### 70万像素后摄的拍摄样张
-![](./camera1.JPG)
-![](./camera2.JPG)
+![](./camera1.jpg)
+![](./camera2.jpg)
 ### CoverFlow (音乐文件用爱思助手手动导入)
-![](./coverflow.PNG)
+![](./coverflow.png)
 ### iMessage
-![](./imessage1.PNG)
-![](./imessage2.PNG)
+![](./imessage1.png)
+![](./imessage2.png)
 
 
 ## 参考资料
