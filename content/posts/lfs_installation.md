@@ -1,5 +1,5 @@
 +++
-title = 'LFS-r12.3-systemd Installation'
+title = 'LFS-r12.3-systemd Installation Log'
 date = 2025-06-10T10:56:27+08:00
 draft = false
 tags = ["linux"]

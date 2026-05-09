@@ -1,5 +1,5 @@
 +++
-title = 'Vim Function Definition Jump'
+title = 'Vim 函数定义转跳'
 date = 2023-12-22T23:42:35+08:00
 draft = false
 +++

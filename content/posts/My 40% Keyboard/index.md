@@ -1,5 +1,5 @@
 +++
-title = 'My 40% Keyboard'
+title = '我的40%配列键盘'
 date = 2025-10-08T23:36:17+08:00
 draft = false
 +++

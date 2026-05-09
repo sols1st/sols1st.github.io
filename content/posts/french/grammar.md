@@ -1,5 +1,5 @@
 +++
-title = 'French Grammar Notes'
+title = '法语语法笔记'
 date = 2025-09-02T15:37:39+08:00
 draft = false
 +++

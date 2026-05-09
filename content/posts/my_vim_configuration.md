@@ -1,5 +1,5 @@
 +++
-title = 'My Vim Configuration'
+title = '我的 Vim 配置'
 date = 2025-11-16T13:41:34+08:00
 draft = false
 +++
