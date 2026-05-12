@@ -3,7 +3,7 @@ title = "c'est moi"
   [[entries.entries]]
   title = "music, computing, literature and linguistics"
   [[entries.entries]]
-  title = "<a href='keys/key.gpg'>gpg-key</a> <a href='keys/key.ssh'>ssh-key</a>"
+  title = "<a href='keys/gpg-key.txt'>gpg-key</a> <a href='keys/ssh-keys.txt'>ssh-key</a>"
   [[entries.entries]]
   title = "<a href='mailto:sols1st@outlook'>email</a>"
 
