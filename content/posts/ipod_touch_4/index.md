@@ -67,7 +67,7 @@ draft = false
 5. 设备重启后如与 VMware 断开连接，需**手动重新连接 USB**
 
 ### 越狱成功
-![](./jailbreaking.PNG)
+![](./jailbreaking.png)
 
 
 ## Cydia 服务器证书无效
