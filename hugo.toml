@@ -25,9 +25,9 @@ theme = "nostyleplease"
     lineNoStart        = 1
     lineNos            = false
     lineNumbersInTable = true
-    noClasses          = true
+    noClasses          = false
     noHl               = false
-    style              = "github"
+    style              = "github-dark"
     tabWidth           = 4
 
   [markup.tableOfContents]
@@ -38,7 +38,7 @@ theme = "nostyleplease"
 [params]
   favicon = "/favicon.ico"
   [params.theme_config]
-    appearance        = "light"
+    appearance        = "auto"
     back_home_text    = ".."
     date_format       = "2006-01-02"
     isListGroupByDate = true
