@@ -1,18 +1,86 @@
-const PLAYLIST_ID = "327175538";
 const LIMIT = 30;
+
+const PLAYLISTS = [
+    { id: "327175538", name: "All" },
+    { id: "806337469", name: "Chinese" },
+    { id: "806320668", name: "English" },
+    { id: "783077831", name: "Japanese" },
+    { id: "17605356033", name: "My 2025 Wrapped" },
+    { id: "13049027605", name: "My 2024 Wrapped" },
+    { id: "7975016336", name: "My 2022 Wrapped" },
+];
+
+
+let PLAYLIST_ID = "327175538";
 let currentPage = 0;
 let hasNextPage = true;
 let isLoading = false;
 
 const API_BASE = "https://apis.netstart.cn/music/playlist/track/all";
 const SONG_URL_API_BASE = "https://wyapi.toubiec.cn/api/music/url";
+
 const tableBody = document.getElementById("table-body");
 const loadingMoreEl = document.getElementById("loading-more");
 const noMoreEl = document.getElementById("no-more");
 const mainAudio = document.getElementById("main-audio");
+const playlistMenuEl = document.getElementById("playlist-menu");
 
 let currentSongIndex = -1;
 let currentlyPlayingLink = null;
+let allPlaylists = PLAYLISTS;
+
+async function loadUserPlaylists() {
+    renderPlaylistMenu();
+    playlistMenuEl.style.display = "flex";
+
+    if (allPlaylists.length > 0) {
+        const firstId = String(allPlaylists[0].id);
+        const firstName = allPlaylists[0].name;
+        PLAYLIST_ID = firstId; // 明确赋值
+        loadNextPage(); // 直接加载，不通过 switchPlaylist 避免判断
+    }
+}
+
+function renderPlaylistMenu() {
+    playlistMenuEl.innerHTML = "";
+    allPlaylists.forEach((pl) => {
+        const a = document.createElement("a");
+        a.href = "javascript:void(0)";
+        a.textContent = pl.name;
+        a.dataset.id = pl.id;
+        if (String(pl.id) === PLAYLIST_ID) {
+            a.classList.add("active");
+        }
+        a.addEventListener("click", () => switchPlaylist(pl.id, pl.name));
+        playlistMenuEl.appendChild(a);
+    });
+}
+
+function switchPlaylist(id, name) {
+    if (String(id) === PLAYLIST_ID) return;
+
+    // 更新当前歌单
+    PLAYLIST_ID = String(id);
+    // 清空表格和状态
+    tableBody.innerHTML = "";
+    currentPage = 0;
+    hasNextPage = true;
+    isLoading = false;
+    currentSongIndex = -1;
+    currentlyPlayingLink = null;
+    mainAudio.src = "";
+    mainAudio.load();
+
+    // 重新加载第一页
+    loadNextPage();
+
+    // 更新菜单激活状态
+    playlistMenuEl.querySelectorAll("a").forEach((a) => {
+        a.classList.toggle("active", a.dataset.id === PLAYLIST_ID);
+    });
+}
+
+// ========== 原有播放逻辑（保持不变，仅微调） ==========
 
 async function playSongAtIndex(index) {
     const row = tableBody.children[index];
@@ -52,7 +120,8 @@ async function playSongAtIndex(index) {
             throw new Error("No valid URL");
         }
     } catch (err) {
-        alert("Failed to play this song");
+        // alert("Failed to play this song");
+        alert("feature is temporarily unavailable");
         console.warn("Failed to play song at index", index, err);
         link.textContent = link.getAttribute("data-original-name");
         link.style.color = "";
@@ -83,31 +152,7 @@ async function tryPlayNextFrom(currentIndex) {
     console.log("No playable songs found after index", currentIndex);
 }
 
-loadNextPage();
-
-window.addEventListener("scroll", () => {
-    if (!hasNextPage || isLoading) return;
-    if (
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 100
-    ) {
-        loadNextPage();
-    }
-});
-
-window.addEventListener("pageshow", (event) => {
-    if (event.persisted) {
-        document.querySelectorAll(".song-link").forEach((link) => {
-            const original = link.getAttribute("data-original-name");
-            if (original) {
-                link.textContent = original;
-                link.style.opacity = "";
-                link.style.color = "";
-            }
-        });
-    }
-});
-
+// ========== 加载歌曲分页 ==========
 async function loadNextPage() {
     if (isLoading || !hasNextPage) return;
 
@@ -163,13 +208,37 @@ function appendSongs(songs) {
 
         const row = document.createElement("tr");
         row.innerHTML = `
-                <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
-                <td>${artists}</td>
-                <td>${album}</td>
-            `;
+            <td><a href="javascript:void(0)" class="song-link" data-id="${id}">${name}</a></td>
+            <td>${artists}</td>
+            <td>${album}</td>
+        `;
         tableBody.appendChild(row);
     });
 }
+
+// ========== 事件监听 ==========
+window.addEventListener("scroll", () => {
+    if (!hasNextPage || isLoading) return;
+    if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 100
+    ) {
+        loadNextPage();
+    }
+});
+
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        document.querySelectorAll(".song-link").forEach((link) => {
+            const original = link.getAttribute("data-original-name");
+            if (original) {
+                link.textContent = original;
+                link.style.opacity = "";
+                link.style.color = "";
+            }
+        });
+    }
+});
 
 tableBody.addEventListener("click", async function (e) {
     if (e.target.classList.contains("song-link")) {
@@ -186,6 +255,7 @@ mainAudio.addEventListener("ended", () => {
     tryPlayNextFrom(currentSongIndex);
 });
 
+// ========== 获取音乐 URL ==========
 async function getMusicUrlByWyapi(id, level = "standard") {
     try {
         const response = await fetch(SONG_URL_API_BASE, {
@@ -208,19 +278,8 @@ async function getMusicUrlByWyapi(id, level = "standard") {
     }
 }
 
-async function getMusicUrlByNxvav(id) {
-    const apiUrl = "https://api.nxvav.cn/api/music/?type=url&id=";
-    try {
-        const response = await fetch(apiUrl + id);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const data = await response.url;
-        return data;
-    } catch (error) {
-        console.error("getMusicUrl error:", error);
-        return null;
-    }
-}
-
 async function getMusicUrl(id) {
     return getMusicUrlByWyapi(id);
 }
+
+loadUserPlaylists(); // 先加载菜单
