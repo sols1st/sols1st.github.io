@@ -61,7 +61,7 @@ draft = false
 - 冰菓 / 2025-02-14 / **Rewatch**
 - WWW.迷糊餐厅 / 2025-01-09
 
-# Archive
+# Before 2025
 - BanGDream! / BanGDream!＜バンドリ！＞
 - GAMERS电玩咖！ / ゲーマーズ！
 - JOJO的奇妙冒险 / ジョジョの奇妙な冒険
