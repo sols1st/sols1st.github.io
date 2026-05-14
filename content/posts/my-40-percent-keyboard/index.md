@@ -9,7 +9,7 @@ draft = false
 [![Vortex Keyboard Core](./core.png)](https://vortexgear.store/products/core)
 That's so compact and cute.
 
-因键盘相较鼠标有着更少的不确定性，操作更加可重复和快捷，我倾向于用键盘完成大部分操作，见[Mouseless for Windows](../mouseless_for_windows)。
+因键盘相较鼠标有着更少的不确定性，操作更加可重复和快捷，我倾向于用键盘完成大部分操作，见[Mouseless for Windows](../mouseless-for-windows)。
 
 我一向偏好紧凑的小配列键盘，在此之前我最常使用68配列。
 
