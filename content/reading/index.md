@@ -3,7 +3,7 @@ title = 'Reading Log'
 date = 2025-06-15T22:21:00+08:00
 draft = false
 +++
-[Paper](../paper/) [2025](#2025)
+[2025](#2025)
 
 # Current
 简明法语教程 / 孙辉
