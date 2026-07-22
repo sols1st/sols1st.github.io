@@ -3,8 +3,8 @@ title = '《简明法语教程（上册）》笔记'
 date = 2026-07-21T14:31:39+08:00
 draft = false
 +++
-
 ## 目录
+
 - **[Leçon 5](#leçon-5)** — 名词阴阳性、不定/定冠词、介词de表领属
 - **[Leçon 6](#leçon-6)** — 名词复数、否定ne...pas、疑问句三种形式
 - **[Leçon 7](#leçon-7)** — 主语人称代词、être变位、冠词省略、阳性→阴性规则
@@ -74,7 +74,7 @@ draft = false
 - **动词变位**: 
   - **apprendre**: j'apprends, tu apprends, il apprend, nous apprenons, vous apprenez, ils apprennent
   - **faire**: je fais, tu fais, il fait, nous faisons, vous faites, ils font
-- **Notes要点**: 
+- **常用词与短语**: 
   - être+en...année(在...年级)；en quelle année提问
   - 介词en后名词无冠词: en première année
   - comme=作为；être difficile pour qn(对某人难)
@@ -89,7 +89,7 @@ draft = false
 - **动词变位**: 
   - **venir**: je viens, tu viens, il vient, nous venons, vous venez, ils viennent
   - **aller**: je vais, tu vas, il va, nous allons, vous allez, ils vont
-- **Notes要点**: 
+- **常用词与短语**: 
   - Soyez le bienvenu(欢迎)→bienvenu要与被欢迎者性数一致
   - venir de+地点=从...来；être de+地点=是...地方人(如: Je suis de Shanghai.)
   - n'est-ce pas=是不是(独立使用，相当于英语isn't it)
@@ -108,7 +108,7 @@ draft = false
 - **动词变位**: 
   - **écrire**: j'écris, tu écris, il écrit, nous écrivons, vous écrivez, ils écrivent
   - **vouloir**: je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent
-- **Notes要点**: 
+- **常用词与短语**: 
   - s'il vous plaît=请(固定短语)；être à+名词=某物属于某人
   - venir ici pour+inf.=来这儿做...；venir de(从...来) ≠ être de(是...人)
   - il y a+名词=有...(无人称，动词始终单数)；y a-t-il是倒装疑问形式
@@ -128,7 +128,7 @@ draft = false
   - **pouvoir**: je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent
   - **voir**: je vois, tu vois, il voit, nous voyons, vous voyez, ils voient
   - **suivre**: je suis, tu suis, il suit, nous suivons, vous suivez, ils suivent
-- **Notes要点**: 
+- **常用词与短语**: 
   - M.=Monsieur, Mme=Madame, Mlle=Mademoiselle(后两者无点)
   - s'adresser à qn=向某人请教；bien起强调(Est-ce qu'il habite bien ici?他确实是住这儿吧?)
   - 楼层表达: le rez-de-chaussée(一层), le premier étage(二层)...(注意与中美差异)
@@ -144,7 +144,7 @@ draft = false
   - **代词y**: 代替à/dans等引导的地点状语，放动词前
   - **国名与介词**: 阴性国名/元音开头阳性国名→en/de(无冠词)；辅音开头阳性国名→au/du；复数国名→aux/des
 - **动词变位**: **lire**: je lis, tu lis, il lit, nous lisons, vous lisez, ils lisent
-- **Notes要点**: 
+- **常用词与短语**: 
   - louer既可"出租"也可"租进"，看上下文；à+inf.表目的(un appartement à louer)
   - téléphoner à qn(给某人打电话)；par jour/an(每天/年)
   - être de combien=询问价格；C'est près de=在...附近
@@ -159,7 +159,7 @@ draft = false
   - **attendre**: j'attends, tu attends, il attend, nous attendons, vous attendez, ils attendent
   - **dire**: je dis, tu dis, il dit, nous disons, **vous dites**, ils disent
   - **devoir**: je dois, tu dois, il doit, nous devons, vous devez, ils doivent
-- **Notes要点**: 
+- **常用词与短语**: 
   - marcher: 走/运转(Cet ordinateur ne marche pas très bien.)
   - demander qch. à qn(问某人某事)；attendre qn(等候某人)；excuser qn(原谅某人)
   - aller+inf.=最近将来时；demi在名词前不变(une demi-heure)，在名词后配合(une heure et demie)
@@ -177,7 +177,7 @@ draft = false
 - **动词变位**: 
   - **sortir**: je sors, tu sors, il sort, nous sortons, vous sortez, ils sortent
   - **savoir**: je sais, tu sais, il sait, nous savons, vous savez, ils savent
-- **Notes要点**: 
+- **常用词与短语**: 
   - être en train de+inf.=正在做...；parler de qn/qch.=谈论...
   - l'un...l'autre=一个...另一个；aller+方式状语=问候身体/工作
   - avoir qch. à faire=有...要做；passer un examen=参加考试
@@ -196,7 +196,7 @@ draft = false
   - **se lever**: je me lève, tu te lèves, il se lève, nous nous levons, vous vous levez, ils se lèvent
   - **partir**: je pars, tu pars, il part, nous partons, vous partez, ils partent
   - **recevoir**: je reçois, tu reçois, il reçoit, nous recevons, vous recevez, ils reçoivent
-- **Notes要点**: 
+- **常用词与短语**: 
   - un fils de paysan(表性质，不定冠词) vs le fils d'un paysan(表所属，定冠词)
   - travailler: v.i.工作/v.t.加工；partir pour=动身去...
   - car(引导独立句，讲究) vs parce que(引导原因从句)
@@ -216,7 +216,7 @@ draft = false
 - **动词变位**: 
   - **connaître**: je connais, tu connais, il connaît, nous connaissons, vous connaissez, ils connaissent
   - **offrir**: j'offre, tu offres, il offre, nous offrons, vous offrez, ils offrent
-- **Notes要点**: 
+- **常用词与短语**: 
   - un de.../une de...=...之一
   - présenter X à Y(把X介绍给Y)；se présenter(自我介绍)
   - connaître qn(认识某人)/un lieu(熟悉某地) ≠ savoir(知道事实/会做某事)
@@ -231,7 +231,7 @@ draft = false
   - **年月日季星期**: en+年份(mil可代替mille)/au printemps, en été/automne/hiver/le+日期(le 1er juillet)/星期几不加介词
   - 季节/月份/星期不用大写(与英语不同)；星期前加le=每星期几
 - **动词变位**: pleuvoir(il pleut), falloir(il faut)
-- **Notes要点**: 
+- **常用词与短语**: 
   - 名词表语有修饰成分时要加冠词: Il est directeur. 但 C'est le directeur du labo N°3.
   - améliorer qch.=改善；faire des excursions=远足
   - à...de+地点=距离某地...；tomber en panne=抛锚(être en panne=故障状态)
@@ -246,13 +246,33 @@ draft = false
   - **ne...que**: 只/仅仅(不是否定，起限定作用；ne在动词前，que在限定成分前)
   - **que引导从句**: dire/croire/penser/comprendre/savoir/voir/espérer+que(que不能省略！)
 - **动词变位**: **mettre**: je mets, tu mets, il met, nous mettons, vous mettez, ils mettent
+- **常用词与短语**: 
+  - travailler comme+职业=当...做...(不带冠词，性数配合)
+  - venir+inf.(来做) ≠ venir de+inf.(刚做过)
+  - ne...plus/ne...pas/ne...jamais否定不定式动词时放不定式前
+  - On arrive.=现在时表最近将来；pas du tout=一点儿也不
+  - un peu de+名词(省略冠词)=少许；tiens=语气词提醒注意
+  - Les voilà.=倒装结构(Voilà les valises.)
+  - avoir qch. à faire=有...要做(=devoir faire qch.)
+  - **parler**: parler+语言(省冠词)/parler de(谈论)/parler à(对...说)/parler avec(和...交谈)
+  - **espérer**: espérer+inf.(希望自己做)/espérer que+从句(希望别人...)
+  - **passer**: v.t.度过/v.i.经过/通行(Défense de passer.禁止通行)
 
 ## Leçon 20
 - **语法**: 
   - **过去分词**: 第一组+é；第二组+i；第三组不规则(见附录)
   - **复合过去时(avoir助动词)**: avoir(现在时)+过去分词→表示过去发生/已完成的动作
   - **复合句**: 平列句(逗号分隔)/并列句(et/ou/mais/ni/car/donc连接)/主从复合句
-- **关键注意**: 法语的时态分为简单时态(动词本身变化)和复合时态(助动词+过去分词)
+- **关键注意**: 简单时态(动词本身变化) vs 复合时态(助动词+过去分词)
+- **常用词与短语**: 
+  - par+方式(par internet/par avion邮递/乘机)
+  - pour+时间: 最后时限/持续时段(Pour dix jours.十天)
+  - dernier前放=最后的，后放=最近的(l'an dernier去年/la fois dernière最近一次)
+  - 复合时态中宾语代词放助动词前(Vous l'avez reçu?)
+  - avoir besoin de qch.=需要...；avoir envie de=渴望/想...
+  - avant(de)+n./inf.=...之前；envoyer qch.(寄)/qn(派)；remplir=填写
+  - c'est...qui强调主语(人称代词用重读: C'est moi qui ai perdu...)
+  - sur la rue=临街(Donner sur le sud.朝南)
 
 ## Leçon 21
 - **语法**: 
@@ -262,6 +282,18 @@ draft = false
   - 代词式动词过去分词配合: 自反代词是**直接宾语**才配合；间接宾语不配合
   - **疑问词小结**: qui/que/quel(有性数变化)/quand/où/comment/combien/pourquoi
   - 疑问句构成: 口语中疑问词常放句末(Tu es arrivé quand?)
+- **常用词与短语**: 
+  - depuis+现在时=动作延续至今；完成体动词(quitter/partir/arriver)用复合过去时+depuis
+  - 否定式复合过去时+depuis表"已有...没..."(Je ne l'ai pas vu depuis 2 ans.)；肯定用il y a
+  - **sonner**: 铃响(Le téléphone sonne.)/按铃(On a sonné à la porte.)
+  - **ouvrir**: v.t.打开(Ouvrir la porte)/v.i.开门营业(Le magasin ouvre à 8h.)
+  - avoir rendez-vous avec qn(与某人约会)/prendre rendez-vous(订约会)→rendez-vous前无冠词
+  - faire plaisir à qn=使某人高兴(Votre invitation nous fera grand plaisir.)
+  - avoir le plaisir de+inf.=有幸做...
+  - **croire**: croire que+从句(相信)/croire qn/qch.(信任)/croire à(相信某事物)
+  - **penser**: penser que(认为)/penser à qch./qn(想念)/penser à+inf.(记得做)
+  - faire voir qch. à qn=让某人看；tous les deux=两个都
+  - ressembler à qn=与某人相像；une tasse(带把杯)≠un verre(玻璃杯)
 
 ## Leçon 22
 - **语法**: 
@@ -270,6 +302,19 @@ draft = false
   - **双宾语代词位置**:
     - 陈述句/否定命令式: me/te/nous/vous → le/la/les; le/la/les → lui/leur
     - 肯定命令式: 动词-le/la/les-moi/toi/lui/nous/vous/leur(直接宾语一律在前)
+- **常用词与短语**: 
+  - voudrais=vouloir条件式现在时(礼貌讲法: je voudrais parler à...)
+  - Ne quittez pas, je vous le passe.=别挂断，我给您转过去(双宾语代词vous间接/le直接)
+  - passer X à Y(让X接Y的电话)；réveiller qn=唤醒(se réveiller=自己醒)
+  - **inviter**: inviter qn à qch./à+inf.(请/邀请)；inviter qn chez soi(请到家里)
+  - **quitter**: 离开(Je n'aime pas te quitter.)；Ne me quittez pas!别离开我!
+  - **dormir**: 睡觉；se coucher(上床)/s'endormir(入睡)/se réveiller(睡醒)/se lever(起床)
+  - **appeler**: 呼唤/叫来(appeler le médecin)/打电话(On vous appelle au téléphone.)
+  - **chercher**: 寻找/chercher qn partout(到处找)/venir chercher qn(来接某人)
+  - être ravi(e) de faire qch.=非常高兴做...(比content感情更强烈)
+  - D'où...=从什么地方...?(用de回答: Je te téléphone de mon école.)
+  - c'est tout=就这样/就这些；Ça ne fait rien.=没关系
+  - emmener qn(带走人) ≠ emporter qch.(带走物)
 
 ## Leçon 23
 - **语法**: 
@@ -277,6 +322,16 @@ draft = false
   - 确指/总体概念时改用定冠词(J'aime la confiture.)
   - 否定句中de代替部分冠词: Je ne prends pas de lait.
   - **代词en补充**: 代替部分冠词+名词；en与间接宾语代词同用→放最后(Donnez-m'en./Ne lui en parle pas.)
+- **常用词与短语**: 
+  - repas(餐): petit déjeuner(早餐)/déjeuner(午餐)/dîner(晚餐)/goûter(下午加餐)
+  - plat(菜): entrée(头盘)/viande ou poisson(主菜)/fromage(奶酪)/dessert ou fruits(甜品水果)
+  - la plupart de+名词=大多数...；avoir envie de=想/渴望
+  - **sentir**: v.t.闻嗅/v.i.散发气味(Ça sent bon!真香! Ce poisson sent mauvais.鱼臭了)/se sentir觉得(se sentir mal/bien)
+  - **le temps**: avoir du temps(有时间)/avoir le temps de+inf.(有做...的时间)
+  - **préférer**: préférer A à B(喜A甚于B)/préférer+inf.+que de+inf.(宁愿...而不...)
+  - passer+时间+à+inf.=花...时间做...
+  - être différent de=与...不同；faire partie de=属于...的一部分
+  - grâce à=多亏；bon→meilleur(比较级特殊形式)
 
 ## Leçon 24
 - **语法**: 
@@ -286,6 +341,16 @@ draft = false
   - **vs 复合过去时**: 未完成=重复/延续/背景；复合=一次/突然/动作本身(常配合: 未完成背景+复合突然事件)
   - **副词位置**: 简单时态放动词后；复合时态放过去分词后或助动词与分词之间(但不是所有副词都可)
   - 特殊拼法: commencer→je commençais/nous commencions; manger→je mangeais/nous mangions; voir→je voyais/nous voyions
+- **常用词与短语**: 
+  - se promener=散步(代词式动词)；emmener qn=领/带走人(emporter qch.=带走物)
+  - le long de=沿着...；longer v.t.=沿着...走
+  - en pleine campagne=在田野中(plein=在...中间)
+  - en un clin d'œil=一瞬间；mouillé=湿的；la portière=车门
+  - **aimer**: aimer qch./qn(喜欢)/aimer+inf./à+inf.(喜欢做)/aimer mieux(更喜欢)
+  - **chanter**: v.t.歌唱歌颂/v.i.唱歌
+  - **mettre**: 放/花费+时间金钱/se mettre à(开始做...)
+  - **monter**: v.t.搬运安装/v.i.登上(助动词用être→Je suis monté au 3ᵉ étage.)
+  - **accepter**: accepter qch.(接受)/accepter de+inf.(同意做)
 
 ## Leçon 25
 - **语法**: 
@@ -294,6 +359,15 @@ draft = false
     - **bon特殊**: bon→meilleur, bonne→meilleure
   - **副词比较级**: plus/moins/aussi+adv.+que
     - **特殊形式**: bien→mieux; beaucoup→plus(较高级)/autant(同等); peu→moins
+- **常用词与短语**: 
+  - une grande surface=大商场(hypermarché/supermarché)
+  - faire des achats/des provisions=采购；un chariot=购物车；un rayon=柜台
+  - au fond à gauche/droite=在尽头左边/右边
+  - C'est tout?=就这些吗?/还要别的吗?；Combien ça fait?=多少钱?
+  - **connaître**: 认识熟悉/获得经历(un grand succès)/了解
+  - **prévoir**: 预料预见/预备准备(prévoir un repas pour 100 invités)
+  - **oublier**: oublier qch.(忘记)/oublier de+inf.(忘记做)
+  - **aider**: aider qn(帮助)/aider qn à+inf./aider à qch.(有助于)
 
 ## Leçon 26
 - **语法**: 
@@ -302,12 +376,30 @@ draft = false
   - **被动态**: être+过去分词(性数配合)；施动者补语: par(强调动作)/de(强调状态或用在感情/思想动词后)
     - 被动态时态由être变位体现: était réparée(未完成)/a été réparée(复合过去)
   - **形容词前de代替des**: des+adj.+名词→de+adj.+名词(de belles fleurs)
+- **常用词与短语**: 
+  - superficie(面积), fleuve(入海河), rivière(支流), chaîne de montagnes(山脉)
+  - être séparé de=被...隔开；être entouré de/par=被...包围；être baigné par=濒临...
+  - Par rapport à...=与...相比；environ=大约
+  - à la fois=同时(à la fois maritime et continental)
+  - **occuper**: v.t.占/lieu(位于)/s'occuper de(关心照料负责)/être occupé(忙碌/被占: La ligne est occupée.)
+  - **s'étendre**: 伸延展开(L'épidémie s'est rapidement étendue.)
+  - De nombreux...=许多...(de=des省略)
 
 ## Leçon 27
 - **语法**: 
   - **关系代词que**: 在从句中作直接宾语(指人或物)；que从句用avoir复合时态→过去分词与先行词性数配合(因que=先行词=前置直接宾语)
   - **关系代词où**: 作地点或时间状语，先行词只能是物
   - 法语关系代词不能省略！(英语有时可省略)
+- **常用词与短语**: 
+  - 巴黎名胜: les Champs-Élysées(香榭丽舍), la Tour Eiffel, l'Arc de Triomphe(凯旋门), Notre-Dame de Paris(巴黎圣母院)
+  - un pêcheur=渔夫(pêcher=钓鱼)；s'installer=定居(代动词)；fréquenté=热闹的/常去的
+  - l'île de la Cité=西岱岛(巴黎发源地)；un bouquiniste=旧书商(塞纳河畔特色)
+  - d'occasion=二手的/旧的(livres d'occasion旧书)
+  - **attirer**: attirer qch./qn(吸引)/attirer l'attention(引起注意)
+  - **remonter**: v.i.重新上升/remonter à(追溯始于)/v.t.提高
+  - **installer**: v.t.安置安装/s'installer(定居: s'installer dans un nouvel appartement)
+  - **trouver**: 找到/trouver que(认为)/se trouver(位于处于)
+  - à cause de=由于/因为(后面跟原因)
 
 ## Leçon 28
 - **语法**: 
@@ -317,6 +409,19 @@ draft = false
     - 中性: ce(作主语/跟关系从句), ceci/cela(ça=口语)
   - **简单将来时**: 第一/二组原形动词+ -ai, -as, -a, -ons, -ez, -ont
   - 第三组不规则词根(必须记): avoir→aur-, être→ser-, aller→ir-, faire→fer-, venir→viendr-, voir→verr-, pouvoir→pourr-, vouloir→voudr-, savoir→saur-, falloir→faudr-, devoir→devr-, recevoir→recevr-, courir→courr-, mourir→mourr-, envoyer→enverr-, pleuvoir→pleuvr-
+- **常用词与短语**: 
+  - celui qui.../ceux qui...可不代替名词，泛指一类人: Ceux qui ne travaillent pas ne reçoivent rien.
+  - cela口语缩合成ça: Ça dépend.(看情况), C'est ça.(对了)
+  - ce qui=what(作主语)；ce que=what(作宾语)
+  - envoyer将来时间干enverr-(j'enverrai)；falloir→il faudra
+  - aller(未完成)+inf.=从过去看即将发生(Le cours allait commencer.)
+  - **opposer**: opposer A à B(使对立)/s'opposer à(反对对抗)
+  - **changer**: changer qch.(更换)/changer de(改变: changer d'avis)/v.i.变化/se changer(换衣服)
+  - **permettre**: permettre qch./permettre à qn de+inf.(允许某人做: Permettez-moi de...)
+  - **disposer**: disposer qch.(安排布置)/disposer de qch.(拥有支配)
+  - **développer**: v.t.发展扩大/se développer(发展发育)
+  - avoir lieu=举行(Le bal a lieu dans la salle N°7.)
+  - avoir l'occasion de+inf.=有机会做...
 
 ## Leçon 29
 - **语法**: 
@@ -330,43 +435,65 @@ draft = false
     - 人称/时态要相应变化
     - **时态配合**(主句过去时): 现在时→未完成过去时；简单将来时→过去将来时；复合过去时→愈过去时
     - 间接疑问句中，从句主谓不倒装，句末用句号
+- **常用词与短语**: 
+  - rêver de+inf.=梦想做...；décider de+inf.=决定做...
+  - soigner qn/qch.=治疗/照料(soigner un rhume治感冒)；guérir qn d'une maladie=治愈某人的病；être guéri=治愈
+  - un médecin(医生) ≠ un médicament(药品)
+  - faire venir qn=请某人来；gravement malade=病重
+  - avoir mal à+身体部位=...疼(Mon estomac me fait très mal.)
+  - **si**: conj.如果/conj.是否(引导间接疑问)/adv.如此地(si...que=so...that)/adv.回答否定疑问句
+  - **intéresser**: intéresser qn(使感兴趣)/s'intéresser à(对...感兴趣)
+  - **commencer**: commencer qch.(开始)/commencer à+inf.(开始做)
+  - **répondre à**=回答(répondre à une question)
 
 ## Leçon 30
 - **语法**: 
-  - **强调表达法**: c'est...qui(强调主语)/c'est...que(强调其他成分)；人称代词用重读形式；ce qui...c'est(强调主语)/ce que...c'est(强调宾语)
+  - **强调表达法**: c'est...qui(强调主语)/c'est...que(强调其他成分)；人称代词用重读形式；ce qui...c'est(强调主语)/ce que...c'est(强调宾语)；ce sont+复数名词
   - **代词式动词四种意义**: 自反(se lever)/相互(se rencontrer)/被动(se vendre)/绝对(se souvenir)；不同意义影响过去分词配合
+- **常用词与短语**: 
+  - 被强调名词复数: c'est→ce sont(Ce sont des romans de Zola que je cherche.)
+  - c'est后跟inf.时加de；跟句子时加que
+  - 书信: 右上地点日期(日月年)；称呼后逗号非冒号；给不熟悉者Monsieur/Madame(不缩写不加姓)；给亲友Cher ami/Chère amie/Cher+名
+  - un colis=包裹；un mandat=汇款；une lettre recommandée=挂号信
+  - affranchir une lettre=贴邮票付邮资；une boîte aux lettres=信筒
+  - **frapper**: 敲打击/使震惊(Ce qui frappe, c'est...令人惊异的是...)
+  - **distinguer**: distinguer A de B(区分辨别)
+  - **porter**: 提抱背/穿戴(porter un costume bleu)/运送携带
+  - **employer**: v.t.使用雇用/s'employer(被使用→Cette expression ne s'emploie plus.)
+  - s'indigner de=对...愤慨
+  - continuer à/de+inf.=继续做...
 
 ---
 
 ## 主要不规则动词变位速查表
 
-| 不定式        | 现在时(je/il/nous/ils)                     | 过去分词     | 将来时间干      | 备注              |
-| ---------- | --------------------------------------- | -------- | ---------- | --------------- |
-| aller      | vais/va/allons/vont                     | allé     | ir-        |                 |
-| avoir      | ai/a/avons/ont                          | eu       | aur-       |                 |
-| être       | suis/est/sommes/sont                    | été      | ser-       |                 |
-| faire      | fais/fait/faisons/font                  | fait     | fer-       | vous faites←特殊! |
-| dire       | dis/dit/disons/disent                   | dit      | dir-       | vous dites←特殊!  |
-| venir      | viens/vient/venons/viennent             | venu     | viendr-    |                 |
-| prendre    | prends/prend/prenons/prennent           | pris     | prendr-    |                 |
-| pouvoir    | peux/peut/pouvons/peuvent               | pu       | pourr-     |                 |
-| vouloir    | veux/veut/voulons/veulent               | voulu    | voudr-     |                 |
-| devoir     | dois/doit/devons/doivent                | dû       | devr-      |                 |
-| savoir     | sais/sait/savons/savent                 | su       | saur-      |                 |
-| voir       | vois/voit/voyons/voient                 | vu       | verr-      |                 |
-| partir     | pars/part/partons/partent               | parti    | partir-    | 助动词être         |
-| sortir     | sors/sort/sortons/sortent               | sorti    | sortir-    | 助动词être         |
-| lire       | lis/lit/lisons/lisent                   | lu       | lir-       |                 |
-| écrire     | écris/écrit/écrivons/écrivent           | écrit    | écrir-     |                 |
-| mettre     | mets/met/mettons/mettent                | mis      | mettr-     |                 |
-| connaître  | connais/connaît/connaissons/connaissent | connu    | connaîtr-  |                 |
-| recevoir   | reçois/reçoit/recevons/reçoivent        | reçu     | recevr-    |                 |
-| falloir    | (il) faut                               | fallu    | faudr-     | 仅第三人称单数         |
-| pleuvoir   | (il) pleut                              | plu      | pleuvr-    | 仅第三人称单数         |
-| suivre     | suis/suit/suivons/suivent               | suivi    | suivr-     |                 |
-| offrir     | offre/offre/offrons/offrent             | offert   | offrir-    |                 |
-| comprendre | 同prendre                                | compris  | comprendr- |                 |
-| devenir    | 同venir                                  | devenu   | deviendr-  | 助动词être         |
-| apprendre  | 同prendre                                | appris   | apprendr-  |                 |
-| descendre  | 同attendre                               | descendu | descendr-  | 助动词être         |
-| attendre   | attends/attend/attendons/attendent      | attendu  | attendr-   |                 |
+| 不定式        | 现在时(je/tu/il/nous/vous/ils)                                | 过去分词     | 将来时间干      | 备注           |
+| ---------- | ---------------------------------------------------------- | -------- | ---------- | ------------ |
+| aller      | vais/vas/va/allons/allez/vont                              | allé     | ir-        |              |
+| avoir      | ai/as/a/avons/avez/ont                                     | eu       | aur-       |              |
+| être       | suis/es/est/sommes/êtes/sont                               | été      | ser-       |              |
+| faire      | fais/fais/fait/faisons/faites/font                         | fait     | fer-       | vous faites! |
+| dire       | dis/dis/dit/disons/dites/disent                            | dit      | dir-       | vous dites!  |
+| venir      | viens/viens/vient/venons/venez/viennent                    | venu     | viendr-    |              |
+| prendre    | prends/prends/prend/prenons/prenez/prennent                | pris     | prendr-    |              |
+| pouvoir    | peux/peux/peut/pouvons/pouvez/peuvent                      | pu       | pourr-     |              |
+| vouloir    | veux/veux/veut/voulons/voulez/veulent                      | voulu    | voudr-     |              |
+| devoir     | dois/dois/doit/devons/devez/doivent                        | dû       | devr-      |              |
+| savoir     | sais/sais/sait/savons/savez/savent                         | su       | saur-      |              |
+| voir       | vois/vois/voit/voyons/voyez/voient                         | vu       | verr-      |              |
+| partir     | pars/pars/part/partons/partez/partent                      | parti    | partir-    | 助动词être      |
+| sortir     | sors/sors/sort/sortons/sortez/sortent                      | sorti    | sortir-    | 助动词être      |
+| lire       | lis/lis/lit/lisons/lisez/lisent                            | lu       | lir-       |              |
+| écrire     | écris/écris/écrit/écrivons/écrivez/écrivent                | écrit    | écrir-     |              |
+| mettre     | mets/mets/met/mettons/mettez/mettent                       | mis      | mettr-     |              |
+| connaître  | connais/connais/connaît/connaissons/connaissez/connaissent | connu    | connaîtr-  |              |
+| recevoir   | reçois/reçois/reçoit/recevons/recevez/reçoivent            | reçu     | recevr-    |              |
+| falloir    | —/—/faut/—/—/—                                             | fallu    | faudr-     | 仅第三人称单数      |
+| pleuvoir   | —/—/pleut/—/—/—                                            | plu      | pleuvr-    | 仅第三人称单数      |
+| suivre     | suis/suis/suit/suivons/suivez/suivent                      | suivi    | suivr-     |              |
+| offrir     | offre/offres/offre/offrons/offrez/offrent                  | offert   | offrir-    |              |
+| comprendre | 同prendre                                                   | compris  | comprendr- |              |
+| devenir    | 同venir                                                     | devenu   | deviendr-  | 助动词être      |
+| apprendre  | 同prendre                                                   | appris   | apprendr-  |              |
+| descendre  | descends/descends/descend/descendons/descendez/descendent  | descendu | descendr-  | 助动词être      |
+| attendre   | attends/attends/attend/attendons/attendez/attendent        | attendu  | attendr-   |              |
