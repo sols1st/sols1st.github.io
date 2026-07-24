@@ -33,10 +33,6 @@ title = "log"
   url = "reading"
   
   [[entries.entries]]
-  title = "concert"
-  url = "live"
-
-  [[entries.entries]]
   title = "devices"
   url = "devices"
 
