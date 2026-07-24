@@ -22,7 +22,11 @@ title = "log"
   
   [[entries.entries]]
   title = "music"
-  url = "playlist"
+  url = "music"
+  
+  [[entries.entries]]
+  title = "album"
+  url = "album"
   
   [[entries.entries]]
   title = "anime"

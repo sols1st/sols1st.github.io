@@ -1,8 +1,182 @@
 # Album
-- First Love / 宇多田ヒカル / 2025-10-12
-- YANKEE / 米津玄師 / 2025-10-13
-- 罪と罰 / 椎名林檎 / 2025-10-14
-- 無罪モラトリアム / 椎名林檎 / 2025-10-14
-- 天佑爱人 / 陈奕迅 / 2026-05-23
-- 婚礼的祝福 / 陈奕迅 / 2026-05-23
-- 幸福 / 陈奕迅 / 2026-05-23
+- [x] First Love / 宇多田ヒカル / ✅ 2025-10-12 
+- [x] YANKEE / 米津玄師 / ✅ 2025-10-13 
+- [x] 罪と罰 / 椎名林檎 / ✅ 2025-10-14
+- [x] 無罪モラトリアム / 椎名林檎 / ✅ 2025-10-14
+- [x] 天佑爱人 / 陈奕迅 / ✅ 2026-05-23
+- [x] 婚礼的祝福 / 陈奕迅 / ✅ 2026-05-23
+- [x] 幸福 / 陈奕迅 / ✅ 2026-05-23
+- [x] Vaundy - strobo (2020) ✅
+- [x] Vaundy - replica (2023) ✅
+- [x] 米津玄師 - STRAY SHEEP (2020) ✅
+- [x] 宇多田光 - First Love (1999) ✅ 2026-05-18
+- [x] 具島直子 - miss. G (1997) ✅ 2026-06-11
+- [x] Lamp - 木洩陽通りにて (2003) ✅ 2026-06-05
+- [x] Serani Poji - one-room survival (2002) ✅ 2026-06-05
+- [x] 相対性理論 - シフォン主義 (2008) ✅ 2026-06-09
+- [x] COWBOY BEBOP - Vitaminless (1998) ✅ 2026-06-12
+- [x] KIRINJI - 3 (2001) ✅ 2026-06-12
+- [x] Pink Floyd - Obscured by Clouds (1972) ✅ 2026-06-11
+- [x] fishmans - LONG SEASON (1996) ✅ 2026-06-09
+- [x] The Beatles - Let It Be (1970) ✅ 2026-06-10
+- [x] The Beatles - Abbey Road (1969) ✅ 2026-06-11
+- [x] The Beatles - Revolver (1966) ✅ 2026-06-10
+- [x] The Beatles - Sgt. Pepper's Lonely Hearts Club Band (1967) ✅ 2026-06-11
+- [x] The Beatles - The Beatles (1968) ✅ 2026-06-16
+- [x] The Beach Boys - Pet Sounds (1966) ✅ 2026-06-11
+- [x] Radiohead - The Bends (1995) ✅ 2026-06-18
+- [x] Radiohead - OK Computer (1997) ✅ 2026-06-01
+- [x] Radiohead - In Rainbows (2007) ✅ 2026-06-16
+- [x] Radiohead - Kid A (2000) ✅ 2026-06-18
+- [x] King Crimson - In The Court Of The Crimson King ✅ 2026-07-15
+- [ ] Björk - Homogenic
+- [ ] Björk - Post
+- [ ] Muse - Showbiz
+- [ ] 電気グルーヴ - A
+- [ ] The Mars Volta - Frances the Mute
+- [ ] 张醒婵 - No，no！
+- [ ] 万能青年旅店 - 冀西南林路行
+- [ ] Supercar - スリーアウトチェンジ
+- [ ] Green Day - Dookie
+- [ ] CAN - Ege Bamyasi
+- [ ] Suede - Suede
+- [ ] Wasting Light - Foo Fighters (Back and Forth)
+- [ ] Oasis: Supersonic
+- [ ] David Bowie - The Rise and Fall of Ziggy Stardust and the Spiders from Mars (1972)
+- [ ] 椎名林檎 - 勝訴ストリップ (2000)
+- [ ] 王菲 - 寓言 (2000)
+- [ ] 王菲 - 唱游 (1998)
+- [ ] 王菲 - 浮躁 (1996)
+- [ ] 林忆莲 - Open Up (1995)
+- [ ] 苏打绿 - 冬未了 (2015)
+- [ ] 苏打绿 - 故事未了 (2016)
+- [ ] 苏打绿 - 小宇宙 (2006)
+- [ ] 苏打绿 - 夏/狂热 (2009)
+- [ ] 苏打绿 - 你在烦恼什么 (2011)
+- [ ] 苏打绿 - 无与伦比的美丽 (2007)
+- [ ] 吴青峰 - 马拉美的星期二 (2022)
+- [ ] 東京事変 - 教育 (2004)
+- [ ] サカナクション - DocumentaLy (2011)
+- [ ] スピッツ - ハチミツ (1995)
+- [ ] The Stone Roses - The Stone Roses (1989)
+- [ ] Frank Zappa - Hot Rats (1969)
+- [ ] Sufjan Stevens - Illinois (2005)
+- [ ] Blind Melon - Soup (1995)
+- [ ] Joy Division - Unknown Pleasures (1979)
+- [ ] The Cure - Bloodflowers (2000)
+- [ ] The Cure - Disintegration (1989)
+- [ ] Television - Marquee Moon (1977)
+- [ ] Talking Heads - Remain in Light (1980)
+- [ ] FISHMANS - '98.12.28男達の別れ (1999)
+- [ ] Spank Happy - Freak Smile (1996)
+- [ ] 陈绮贞 - 吉他手 (2002)
+- [ ] Pulp - Different Class (1995)
+- [ ] 伍佰 & China Blue - 梦的河流 (2001)
+- [ ] 椎名林檎 - 無罪モラトリアム (1999)
+- [ ] Blur - The Magic Whip (2015)
+- [ ] 何欣穗 - 她的，发光摇摆 (2002)
+- [ ] Janet Jackson - janet. (1993)
+- [ ] Fishmans - 空中キャンプ (1996)
+- [ ] The Smashing Pumpkins - Siamese Dream (1993)
+- [ ] Adrianne Lenker - Bright Future (2020)
+- [ ] LCD Soundsystem - Sound of Silver (2007)
+- [ ] LCD Soundsystem - The Long Goodbye (SHUT UP AND PLAY THE HITS)
+- [ ] 崔健 - 新长征路上的摇滚 (1989)
+- [ ] 陈珊妮 - 完美的呻吟 (2000)
+- [ ] Joni Mitchell - Blue (1971)
+- [ ] Primal Scream - Screamadelica (1991)
+- [ ] Madonna - Madonna (1983)
+- [ ] Prince and the Revolution - Purple Rain (1984)
+- [ ] Bauhaus - In the Flat Field (1980)
+- [ ] 苏打绿 - 苏打绿 (2005)
+- [ ] Gorillaz - Demon Days (2005)
+- [ ] The Strokes - Is This It (2001)
+- [ ] 伊能静 - 关不住 (2001)
+- [ ] 罗大佑 - 未来的主人翁 (1983)
+- [ ] The Velvet Underground - Loaded (1970)
+- [ ] Stevie Wonder - Innervisions (1973)
+- [ ] Stereolab - Dots and Loops (1997)
+- [ ] David Bowie - Blackstar (2016)
+- [ ] The Smiths - The Queen Is Dead (1986)
+- [ ] 关淑怡 - All Time Favourites (1995)
+- [ ] Television - Television (1992)
+- [ ] 彭羚 - 要多美丽有多美丽 (2000)
+- [ ] Arcade Fire - Funeral (2004)
+- [ ] Bruce Springsteen - Born to Run (1975)
+- [ ] Blur - The Ballad of Darren (2023)
+- [ ] Portishead - Roseland NYC Live (1998)
+- [ ] Wilco - Yankee Hotel Foxtrot (2002)
+- [ ] ACO - Absolute Ego (1999)
+- [ ] Queens of the Stone Age - Songs for the Deaf (2002)
+- [ ] 伍佰 & China Blue - 树枝孤鸟 (1998)
+- [ ] Kylie Minogue - Fever (2001)
+- [ ] 张醒婵 - No, no! (2005)
+- [ ] 蓝奕邦 - 不要人见人爱 (2004)
+- [ ] Led Zeppelin - IV (1971)
+- [ ] Fleetwood Mac - Rumours (1977)
+- [ ] Elton John - Goodbye Yellow Brick Road (1973)
+- [ ] Carole King - Tapestry (1971)
+- [ ] Simon & Garfunkel - Bridge Over Troubled Water (1970)
+- [ ] Marvin Gaye - What's Going On (1971)
+- [ ] Stevie Wonder - Songs in the Key of Life (1976)
+- [ ] Michael Jackson - Thriller (1982)
+- [ ] Madonna - Like a Prayer (1989)
+- [ ] Kate Bush - Hounds of Love (1985)
+- [ ] Black Sabbath - Paranoid (1970)
+- [ ] The Who - Who's Next (1971)
+- [ ] Pink Floyd - The Dark Side of the Moon (1973)
+- [ ] Pink Floyd - Wish You Were Here (1975)
+- [ ] King Crimson - In the Court of the Crimson King (1969)
+- [ ] Yes - Close to the Edge (1972)
+- [ ] Genesis - Selling England by the Pound (1973)
+- [ ] Rush - Moving Pictures (1981)
+- [ ] The Velvet Underground & Nico (1967)
+- [ ] The Stooges - Fun House (1970)
+- [ ] Patti Smith - Horses (1975)
+- [ ] Ramones - Ramones (1976)
+- [ ] Joy Division - Closer (1980)
+- [ ] Sonic Youth - Daydream Nation (1988)
+- [ ] Pixies - Doolittle (1989)
+- [ ] R.E.M. - Automatic for the People (1992)
+- [ ] My Bloody Valentine - Loveless (1991)
+- [ ] Slowdive - Souvlaki (1993)
+- [ ] Dinosaur Jr. - You're Living All Over Me (1987)
+- [ ] Pavement - Crooked Rain, Crooked Rain (1994)
+- [ ] Fugazi - Repeater (1990)
+- [ ] Slint - Spiderland (1991)
+- [ ] Neutral Milk Hotel - In the Aeroplane Over the Sea (1998)
+- [ ] Modest Mouse - The Lonesome Crowded West (1997)
+- [ ] Coldplay - Parachutes (2000)
+- [ ] Muse - Origin of Symmetry (2001)
+- [ ] Interpol - Turn on the Bright Lights (2002)
+- [ ] The National - Boxer (2007)
+- [ ] Black Country, New Road - Ants From Up There (2022)
+- [ ] Kraftwerk - The Man-Machine (1978)
+- [ ] Brian Eno - Another Green World (1975)
+- [ ] Yellow Magic Orchestra - Solid State Survivor (1979)
+- [ ] New Order - Power, Corruption & Lies (1983)
+- [ ] Aphex Twin - Selected Ambient Works 85-92 (1992)
+- [ ] Daft Punk - Discovery (2001)
+- [ ] The Chemical Brothers - Dig Your Own Hole (1997)
+- [ ] Burial - Untrue (2007)
+- [ ] Oneohtrix Point Never - Replica (2011)
+- [ ] Miles Davis - Kind of Blue (1959)
+- [ ] John Coltrane - A Love Supreme (1965)
+- [ ] Charles Mingus - Mingus Ah Um (1959)
+- [ ] Bill Evans Trio - Waltz for Debby (1961)
+- [ ] Herbie Hancock - Head Hunters (1973)
+- [ ] Nina Simone - Pastel Blues (1965)
+- [ ] Curtis Mayfield - Super Fly (1972)
+- [ ] Aretha Franklin - I Never Loved a Man the Way I Love You (1967)
+- [ ] D'Angelo - Voodoo (2000)
+- [ ] Erykah Badu - Mama's Gun (2000)
+- [ ] Phoebe Bridgers - Punisher (2020)
+- [ ] Japanese Breakfast - Jubilee (2021)
+- [ ] Caroline Polachek - Desire, I Want to Turn Into You (2023)
+- [ ] Sufjan Stevens - Carrie & Lowell (2015)
+- [ ] Big Thief - Dragon New Warm Mountain I Believe in You (2022)
+- [ ] Black Midi - Hellfire (2022)
+- [ ] Magdalena Bay - Imaginal Disk (2024)
+- [ ] Geordie Greep - The New Sound (2024)
+- [ ] Fontaines D.C. - Romance (2024)
+- [ ] Cindy Lee - Diamond Jubilee (2024)
