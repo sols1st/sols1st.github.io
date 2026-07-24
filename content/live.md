@@ -3,6 +3,8 @@ title = 'Live Music Video Collection'
 date = 2025-06-19T11:21:00+08:00
 draft = false
 +++
+## Log
+## Favourite
 - [黑暗中漫舞 [The Easy Ride]](https://www.bilibili.com/video/BV1QU4y1o7Wp)
 - [无人之境 [DUO]](https://www.bilibili.com/video/BV1x54y1G7Z6/)
 - [陀飞轮 [DUO]](https://www.bilibili.com/video/BV1Gy4y1q7ZS/)
@@ -32,6 +34,6 @@ draft = false
 - [人车志 [Eason's Moving On Stage]](https://www.bilibili.com/video/BV1Ur4y117H4)
 - [给爱丽丝 [Third Encounter Live]](https://www.bilibili.com/video/BV1NK4y1U7pQ)
 - [圣诞结 [Eason's Life]](https://www.bilibili.com/video/BV1vb411T78W/)
-
 - [Viva La Vida](https://www.bilibili.com/video/BV1AX4y1G7or/)
 - [Yellow](https://www.bilibili.com/video/BV1ZX4y1V7Qb/)
+- Guns, God and Government / Marilyn Manson / 2026-05-22 /  爽

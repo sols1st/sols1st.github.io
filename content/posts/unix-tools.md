@@ -31,6 +31,7 @@ draft = false
 - [which/whereis](#whichwhereis) - 查找命令位置
 - [whoami](#whoami) - 查看当前用户
 - [xargs](#xargs) - 构建命令参数
+- [rsync](#rsync) - 高效文件同步与远程传输
 
 ## awk
 
@@ -594,4 +595,50 @@ find . -name "*.tmp" | xargs rm
 ls *.txt | xargs -n1 cat
 
 find . -name "*.py" | xargs -I {} cp {} backup/
+```
+
+## rsync
+
+rsync用于本地或远程文件同步，支持增量传输、断点续传和权限保留，是Linux/Unix中最常用的同步工具之一。
+
+### 基本语法
+
+```bash
+rsync [选项] 源路径 目标路径
+```
+
+### 常用选项
+
+* `-a`：归档模式（保留权限、时间等）
+* `-v`：显示详细信息
+* `-z`：传输时压缩数据
+* `-h`：人类可读格式
+* `-P`：显示进度并支持断点续传
+* `--delete`：删除目标中多余文件
+* `-e`：指定远程shell
+* `--exclude`：排除文件
+
+### 示例
+
+```bash
+# 本地同步目录
+rsync -av source/ backup/
+
+# 同步并显示进度
+rsync -avP source/ backup/
+
+# 远程同步到服务器
+rsync -avz ./project/ user@server:/home/user/project/
+
+# 指定SSH端口
+rsync -avz -e "ssh -p 2222" ./project/ user@server:/data/
+
+# 从远程服务器下载文件
+rsync -avz user@server:/var/log/syslog .
+
+# 删除目标目录中多余文件
+rsync -av --delete source/ backup/
+
+# 排除指定文件
+rsync -av --exclude "*.log" project/ backup/
 ```
