@@ -1,3 +1,8 @@
++++
+title = 'Album'
+date = 2026-07-15T08:59:27+08:00
+draft = false
++++
 # Album
 - [x] First Love / 宇多田ヒカル / ✅ 2025-10-12 
 - [x] YANKEE / 米津玄師 / ✅ 2025-10-13 
