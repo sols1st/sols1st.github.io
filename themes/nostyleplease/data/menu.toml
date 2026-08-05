@@ -22,7 +22,11 @@ title = "log"
   
   [[entries.entries]]
   title = "music"
-  url = "playlist"
+  url = "music"
+  
+  [[entries.entries]]
+  title = "album"
+  url = "album"
   
   [[entries.entries]]
   title = "anime"
@@ -32,10 +36,6 @@ title = "log"
   title = "reading"
   url = "reading"
   
-  [[entries.entries]]
-  title = "concert"
-  url = "live"
-
   [[entries.entries]]
   title = "devices"
   url = "devices"
