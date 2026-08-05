@@ -23,21 +23,21 @@ title = "log"
   [[entries.entries]]
   title = "music"
   url = "playlist"
+
+  [[entries.entries]]
+  title = "anime"
+  url = "anime"
   
   [[entries.entries]]
   title = "album"
   url = "album"
   
   [[entries.entries]]
-  title = "anime"
-  url = "anime"
-  
-  [[entries.entries]]
   title = "reading"
   url = "reading"
-  
+
   [[entries.entries]]
-  title = "devices"
+  title = "device"
   url = "devices"
 
 [[entries]]

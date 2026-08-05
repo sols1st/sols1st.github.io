@@ -14,15 +14,16 @@ Devices currently in use.
 5. iPad (9th generation, 64GB)
 6. iPad mini (5th generation, 64GB)
 7. Kindle Paperwhite 2
-8. Edifier W820NB
-9. Vivo TWS 4
-10. OPPO Enco Air 3
-11. Xiaomi Smart Band 10 NFC
-12. Nektar SE25
+8. [TU40 (keyboard)](../posts/my-40-percent-keyboard/)
+9. Edifier W820NB
+10. Vivo TWS 4
+11. OPPO Enco Air 3
+12. Xiaomi Smart Band 10 NFC
+13. Nektar SE25
 
 ## Owned
 Devices that I still keep but no longer actively use.
-1. iPod Touch (4th generation)
+1. [iPod Touch (4th generation)](../posts/ipod-touch-4/)
 2. ASUS Laptop (i5-3210M, 4GB DDR3)
 3. iPad (1st generation, 64GB)
 4. Sony Xperia XZ1 Compact
