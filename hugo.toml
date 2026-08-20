@@ -1,4 +1,4 @@
-baseURL = 'https://www.solsist.me'
+baseURL = 'https://sols1st.github.io'
 languageCode = 'zh-CN'
 title = "Solsist's Strobo"
 theme = "nostyleplease"
