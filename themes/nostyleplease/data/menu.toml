@@ -18,6 +18,16 @@ title = "post"
   show_more_url = "posts"
 
 [[entries]]
+title = "writing"
+  
+  [entries.post_list]
+  limit = 10
+  section = "writing"
+  show_more = true
+  show_more_text = "show more"
+  show_more_url = "writing"
+
+[[entries]]
 title = "log"
   
   [[entries.entries]]
