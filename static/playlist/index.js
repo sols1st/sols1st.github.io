@@ -17,7 +17,7 @@ let hasNextPage = true;
 let isLoading = false;
 
 const API_BASE = "https://apis.netstart.cn/music/playlist/track/all";
-const SONG_URL_API_BASE = "https://wyapi.toubiec.cn/api/music/url";
+const SONG_URL_API_BASE = "https://api.qijieya.cn/meting/";
 
 const tableBody = document.getElementById("table-body");
 const loadingMoreEl = document.getElementById("loading-more");
@@ -256,30 +256,8 @@ mainAudio.addEventListener("ended", () => {
 });
 
 // ========== 获取音乐 URL ==========
-async function getMusicUrlByWyapi(id, level = "standard") {
-    try {
-        const response = await fetch(SONG_URL_API_BASE, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ id: String(id), level }),
-        });
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
-        }
-        const data = await response.json();
-        if (data.code === 200 && data.data?.[0]?.url) {
-            return data.data[0].url;
-        } else {
-            throw new Error(data.msg || "No URL returned");
-        }
-    } catch (error) {
-        console.error("getMusicUrl error:", error);
-        return null;
-    }
-}
-
-async function getMusicUrl(id) {
-    return getMusicUrlByWyapi(id);
+function getMusicUrl(id) {
+    return `${SONG_URL_API_BASE}?type=url&id=${id}`;
 }
 
 loadUserPlaylists(); // 先加载菜单
