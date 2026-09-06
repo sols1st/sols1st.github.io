@@ -1,4 +1,6 @@
 /public/
 /resources/
+/.obsidian/
 /.vscode/
 .DS_Store
+.hugo_build.lock
