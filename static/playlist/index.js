@@ -5,9 +5,9 @@ const PLAYLISTS = [
     { id: "806337469", name: "Chinese" },
     { id: "806320668", name: "English" },
     { id: "783077831", name: "Japanese" },
-    { id: "17605356033", name: "My 2025 Wrapped" },
-    { id: "13049027605", name: "My 2024 Wrapped" },
-    { id: "7975016336", name: "My 2022 Wrapped" },
+    { id: "17605356033", name: "2025" },
+    { id: "13049027605", name: "2024" },
+    { id: "7975016336", name: "2022" },
 ];
 
 

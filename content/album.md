@@ -3,7 +3,7 @@ title = 'Album'
 date = 2026-07-15T08:59:27+08:00
 draft = false
 +++
-# Album
+
 - [x] First Love / 宇多田ヒカル / ✅ 2025-10-12 
 - [x] YANKEE / 米津玄師 / ✅ 2025-10-13 
 - [x] 罪と罰 / 椎名林檎 / ✅ 2025-10-14
@@ -34,16 +34,45 @@ draft = false
 - [x] Radiohead - In Rainbows (2007) ✅ 2026-06-16
 - [x] Radiohead - Kid A (2000) ✅ 2026-06-18
 - [x] King Crimson - In The Court Of The Crimson King ✅ 2026-07-15
+- [x] NEU! - NEU! 75 ✅ 2026-07-16
+- [x] CAN - Ege Bamyasi ✅ 2026-07-18
+- [x] Muse - Showbiz ✅ 2026-07-19
+- [x] NEU! - NEU! ✅ 2026-07-25
+- [x] Queen - News Of The World ✅ 2026-07-31
+- [x] Queen - A Night at the Opera ✅ 2026-07-31
+- [x] Stevie Wonder - Innervisions (1973) ✅ 2026-08-13
+- [ ] 罗大佑 - 原乡
+- [ ] 罗大佑 - 未来的主人翁
+- [ ] Lamp - ゆめ
+- [x] 蔡琴 - 你不要那样看着我的眼睛 ✅ 2026-08-13
+- [ ] never young beach - YASHINOKI HOUSE
+- [ ] The Strokes - The New Abnormal
+- [ ] Caroline Polachek - Desire, I Want To Turn Into You
+- [ ] Janet Jackson - The Velvet Rope
+- [ ] Olivia Rodrigo - GUTS (spilled)
+- [ ] POiSON GiRL FRiEND - MELTING MOMENT
+- [ ] Madonna - Erotica
+- [ ] Radiohead - Amnesiac
+- [ ] Billie Eilish - HIT ME HARD AND SOFT
+- [ ] Billie Eilish - WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?
+- [x] L'Impératrice - Tako Tsubo ✅ 2026-08-01
+- [ ] 伍佰 - 白鸽
+- [ ] 伍佰 - 浪人情歌
+- [ ] 伍佰 - 树枝孤鸟
+- [ ] 伍佰 - 梦的河流
+- [ ] 伍佰 - 讓水倒流
+- [ ] 伍佰 - 爱情的尽头
+- [ ] Hi-Posi - 身体と歌だけの関係
+- [ ] Grimes - Art Angels
+- [ ] Led Zeppelin - IV (1971)
 - [ ] Björk - Homogenic
 - [ ] Björk - Post
-- [ ] Muse - Showbiz
-- [ ] 電気グルーヴ - A
+- [x] 電気グルーヴ - A ✅ 2026-07-29
 - [ ] The Mars Volta - Frances the Mute
 - [ ] 张醒婵 - No，no！
 - [ ] 万能青年旅店 - 冀西南林路行
 - [ ] Supercar - スリーアウトチェンジ
 - [ ] Green Day - Dookie
-- [ ] CAN - Ege Bamyasi
 - [ ] Suede - Suede
 - [ ] Wasting Light - Foo Fighters (Back and Forth)
 - [ ] Oasis: Supersonic
@@ -99,7 +128,6 @@ draft = false
 - [ ] 伊能静 - 关不住 (2001)
 - [ ] 罗大佑 - 未来的主人翁 (1983)
 - [ ] The Velvet Underground - Loaded (1970)
-- [ ] Stevie Wonder - Innervisions (1973)
 - [ ] Stereolab - Dots and Loops (1997)
 - [ ] David Bowie - Blackstar (2016)
 - [ ] The Smiths - The Queen Is Dead (1986)
@@ -117,7 +145,6 @@ draft = false
 - [ ] Kylie Minogue - Fever (2001)
 - [ ] 张醒婵 - No, no! (2005)
 - [ ] 蓝奕邦 - 不要人见人爱 (2004)
-- [ ] Led Zeppelin - IV (1971)
 - [ ] Fleetwood Mac - Rumours (1977)
 - [ ] Elton John - Goodbye Yellow Brick Road (1973)
 - [ ] Carole King - Tapestry (1971)

@@ -9,9 +9,8 @@ title = "c'est moi"
 
 [[entries]]
 title = "post"
-  
   [entries.post_list]
-  limit = 10
+  limit = 8
   section = "posts"
   show_more = true
   show_more_text = "show more"
@@ -48,7 +47,7 @@ title = "log"
 
   [[entries.entries]]
   title = "device"
-  url = "devices"
+  url = "device"
 
 [[entries]]
 title = "toy"
