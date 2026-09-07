@@ -1,0 +1,34 @@
++++
+title = 'Marble'
+date = 2026-09-07T03:39:34+08:00
+draft = false
++++
+He said, “Come on, come on.” He had pedaled his grandfather's green three-wheeled bicycle over to my house—the old man who sat every day at the entrance of that little factory, his hair the same color as cigarette ash. I had never known what they made in that factory. I only ever saw people occasionally shoveling coal into the big iron furnace by the door; when I looked through the mouth of the furnace, everything inside was glowing red, and I couldn't make out what they were burning. Later I figured it out: it could only have been coal.The yellow-mud road was covered with tire tracks, thick and thin.
+
+He stood in the cargo bed of the three-wheeler and shouted that he was going somewhere or other, asking me to come with him.I looked at him, then at the three-wheeler. Three big letters, “BMW,” were spray-painted in white on its rear panel. It must be a really good car. But I was on my way to the hardware store at the other end of the village to buy some nails, because that morning Grandpa had spent eighteen yuan at a stall behind the market buying an authentic piece of Wang Xizhi's calligraphy. He wanted to hang it in the living room. When I looked at the calligraphy, it smelled like the printing shop in town, but the man who sold it had sworn to Grandpa that it was genuine, so it was genuine.
+
+I was still thinking about Wang Xizhi and the nails when he said, “Come on, come on,” again, then I went with him. In the cargo bed there was a little pale-green plastic stool, with Mickey Mouse printed on the seat, his hands on his hips and his legs spread apart, smiling happily. I remembered that when Grandpa came home that morning holding the authentic Wang Xizhi calligraphy, he had been smiling just as happily. He jumped down from the cargo bed, climbed onto the driver's seat, and I climbed into the back and sat on Mickey Mouse's face. Then he started pedaling. I asked him where we were going. He said something I didn't catch. I asked him again. This time he answered much louder, and two old women walking ahead turned around to look at us. I still couldn't understand him, so I said “ah” and didn't ask again.
+
+There was a breakfast shop by the roadside. Yesterday I had eaten its meat buns, and the day before that I had eaten them too. The filling inside was about the size of a marble. I didn't like their buns, but I liked marbles. Last week Mom gave me a box of Chinese checkers. I didn't know how to play, so I took the marbles out one by one and held them under the light to look at them. I picked out the roundest ones and put them in the glass jar on the table, and put the rest back into the Chinese checkers box. Right now I wished the box were beside me, because I wanted to use the remaining marbles to hit the breakfast-shop owner in the head.
+
+The sun was vicious, and my face was burning hot. Squinting, I saw several beads of sweat, the size of mung beans, hanging from his forehead. I thought I should pedal for him for a while, but I didn't know where we were going, so I didn't say anything. We passed a little supermarket, a barbershop, a stationery store, a bicycle repair shop, and a key-cutting shop. Just before we left the village, I saw the hardware store. The owner was sitting behind the glass display case at the front, smoking tobacco. From the middle of the road I couldn't see what was inside the glass case, but I knew there were several rows of screws, nuts, and nails, because I had been there before. I had meant to go there today.
+
+The road outside the village was no wider than the roads inside it. There were fields on both sides, with green stalks standing one by one in the earth. I didn't know what they had planted. The chain creaked and squeaked, and I thought of marbles again. Last night I had been rolling two marbles against each other, and they had made the same creaking sound. I accidentally pressed too hard. They shot out, hit the floor, and bounced away with a tap, tap, tap. I bent down and searched everywhere. I searched the whole room and found only one beside the leg of the table. The other one was still bouncing in my head, tap, tap, tap, even now, but then the three-wheeler stopped.
+
+He got off the three-wheeler and stood in the middle of the road for a while. I got off too. At some point, without my noticing, the ground beneath our feet had become a concrete road. There were cracks running through it, with very thin grass growing in them. Not far ahead, beside the road, stood a little house made of red brick. It had no door, and all the windows were broken. Some shards of glass were still stuck in the window frames. They looked like the mountain at the far end of the village.
+
+He walked over, and I followed him. We went inside. The floor was covered with garbage stuffed into red, green, and blue plastic bags. He rummaged through the pile twice and picked up a small metal box. I had seen it at the stationery store before. There was a cartoon dog printed on it, along with some English words. He held the metal box in one hand and opened the lid with the other. Inside was a marble. I recognized it at once. It was the one I had been unable to find yesterday.
+
+“That's my marble.”
+
+“It's not yours. It's mine.”
+
+“It's mine. I lost it last night.”
+
+He became agitated and said, “This is mine.”
+
+Then he punched me hard in the nose, took the marble, and ran out of the house laughing. My nose hurt for a while, and then it felt as if I had choked on water. I covered my nose for a while, then straightened up and walked outside. He and the three-wheeler were gone. Something warm crawled down from beneath my nose and touched my lips. I reached up and touched it. My finger was red, like Mickey Mouse's tongue.
+
+By the time I got back to the village, the hardware store was already closed. The supermarket, the barbershop, the stationery store, the bicycle repair shop, and the key-cutting shop were closed too. When I passed the little factory, I saw the three-wheeler parked outside. Someone was shoveling coal from its cargo bed into the furnace, and the old man was sitting there as usual by the door. I wanted to ask him where his grandson was, but the old man suddenly stood up and went inside the factory. With a clang, he shut the door. From inside came the sound of an iron latch scraping across a metal ring, clank, clank.
+
+The three-wheeler was still parked outside the factory. I walked over to it and saw something shining in the shadow underneath. I crouched down and looked beneath the three-wheeler. There was a marble. I reached out for it, and the moment my fingers touched it, it rolled deeper into the darkness on its own. I lay there on the ground and looked for a long time.I couldn’t see a thing.
