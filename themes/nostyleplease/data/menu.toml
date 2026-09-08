@@ -5,10 +5,10 @@ title = "c'est moi"
   [[entries.entries]]
   title = "<a href='keys/gpg-key.txt'>gpg-key</a> <a href='keys/ssh-keys.txt'>ssh-key</a>"
   [[entries.entries]]
-  title = "<a href='mailto:sols1st@outlook'>email</a>"
+  title = "<a href='./index.xml'>rss</a> <a href='mailto:sols1st@outlook'>email</a>"
 
 [[entries]]
-title = "post"
+title = "scriptum"
   [entries.post_list]
   limit = 8
   section = "posts"
@@ -17,7 +17,7 @@ title = "post"
   show_more_url = "posts"
 
 [[entries]]
-title = "writing"
+title = "hsiao³-shuo¹"
   
   [entries.post_list]
   limit = 10
@@ -27,7 +27,7 @@ title = "writing"
   show_more_url = "writing"
 
 [[entries]]
-title = "record"
+title = "Sammlung"
   
   [[entries.entries]]
   title = "music"
@@ -50,7 +50,7 @@ title = "record"
   url = "device"
 
 [[entries]]
-title = "toy"
+title = "おもちゃ"
   [[entries.entries]]
   title = "typing-cn"
   url = "typing-cn"

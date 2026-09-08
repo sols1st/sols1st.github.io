@@ -37,6 +37,7 @@ theme = "nostyleplease"
 
 [params]
   favicon = "/favicon.ico"
+  ShowFullTextinRSS = true
   [params.theme_config]
     appearance        = "auto"
     back_home_text    = ".."
