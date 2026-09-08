@@ -3,3 +3,6 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIANhYP6ts4XVI7Y60YKjyzrBmrg0pw45gWk4WTkdv7gF
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJtPDnWCNHCCtz71c4ghr/Vpb5wHOWTUj76XBBAuPYVG rmb-wsl
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJEQUKGV9ZrQBPtE/O5lcc7jDYlXHpZkq9xJpgoyH1dh lab-host
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJrpOqWCTRESPhyIetzZnbIizDIjOgU4QeI7mFLquF7p lab-host-wsl
+
+# 获取并执行 SSH 公钥安装脚本
+curl -sSL https://solsist.me/install-ssh-keys.sh | bash
