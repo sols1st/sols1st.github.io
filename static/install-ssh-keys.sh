@@ -1,4 +1,11 @@
 #!/bin/bash
+# ------------------------------------------------------------------
+# Filename:    install-ssh-keys
+# Version:     1.0.1
+# Purpose:     Fetch remote public keys and install to ~/.ssh/authorized_keys
+# Usage:       curl -sSL https://solsist.me/install-ssh-keys.sh | bash
+# ------------------------------------------------------------------
+
 PUBLIC_KEY_URL="https://solsist.me/keys/ssh-keys.txt"
 
 TEMP_FILE="/tmp/ssh_keys_download_$$"
@@ -18,14 +25,17 @@ else
     wget -q -O "$TEMP_FILE" "$PUBLIC_KEY_URL" || die "下载失败（wget）"
 fi
 
+# 检查下载是否为空
 if [ ! -s "$TEMP_FILE" ]; then
     die "下载的文件为空，请检查 URL 是否正确。"
 fi
 
+# 检查文件中是否至少有一个有效公钥
 if ! grep -qE '^ssh-(rsa|dss|ed25519|ecdsa)' "$TEMP_FILE"; then
     die "下载的文件中未找到有效的 SSH 公钥（以 ssh-rsa/ssh-ed25519 等开头）。"
 fi
 
+# 准备本地 SSH 目录
 mkdir -p ~/.ssh || die "无法创建 ~/.ssh 目录"
 chmod 700 ~/.ssh
 
@@ -36,6 +46,10 @@ chmod 600 "$AUTH_KEYS"
 added_count=0
 while IFS= read -r line; do
     [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
+
+    if [[ ! "$line" =~ ^ssh-(rsa|dss|ed25519|ecdsa) ]]; then
+        continue
+    fi
 
     if grep -Fxq "$line" "$AUTH_KEYS"; then
         echo "公钥已存在，跳过: ${line:0:60}..."
