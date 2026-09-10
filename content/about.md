@@ -38,5 +38,19 @@ German — **“collection”**
 **おもちゃ** (*omocha*)  
 Japanese — **“toy”**
 
+### My Relationship with Languages:
+* **Chinese:** Native
+* **English:** Conversational; comfortable with reading
+* **Japanese:** Basic conversation and reading
+* **French:** Can read simple texts; not conversational
+* **German:** Beginner; currently learning
+* **Latin:** Beginner; trying it out, but I don't know if I'll continue learning it
+* **Spanish:** Beginner; trying it out, maybe I'll learn it someday
+* **Korean:** Know the alphabet, but nothing else; planning to learn
+* **Russian:** Know the alphabet, but nothing else; too complex, so I won't learn it
+* **Arabic:** Trying to learn the alphabet; I don't plan to learn beyond that
+
+
+
 ## Who is this blog for?
 DEFINITELY MYSELF.
